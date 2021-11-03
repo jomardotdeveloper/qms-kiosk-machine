@@ -146,7 +146,7 @@ namespace KioskQMS
             this.btnNo.Name = "btnNo";
             this.btnNo.Size = new System.Drawing.Size(209, 66);
             this.btnNo.TabIndex = 0;
-            this.btnNo.Text = "Not Now";
+            this.btnNo.Text = "No";
             this.btnNo.UseVisualStyleBackColor = true;
             this.btnNo.Click += new System.EventHandler(this.btnNo_Click_1);
             // 

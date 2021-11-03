@@ -24,24 +24,56 @@ namespace KioskQMS
             this.txtAmount.GotFocus += TextBox_GotFocus;
             this.Form = form;
         }
-
-        private void btnBack_Click_1(object sender, EventArgs e)
+        
+        private void btn0_Click_1(object sender, EventArgs e)
         {
-            this.Form.OpenForm(new FormServices(this.Transaction, this.Form));
+            EnterNumber("0");
+        }
+        private void btn3_Click_1(object sender, EventArgs e)
+        {
+            EnterNumber("3");
         }
 
-        private void btnNext_Click_1(object sender, EventArgs e)
+        private void btn2_Click_1(object sender, EventArgs e)
         {
-            Validation();
+            EnterNumber("2");
         }
 
-        private void txtAmount_TextChanged(object sender, EventArgs e)
+        private void btn1_Click_1(object sender, EventArgs e)
         {
-
+            EnterNumber("1");
         }
 
+        private void btn6_Click_1(object sender, EventArgs e)
+        {
+            EnterNumber("6");
+        }
 
-        private void btnClear_Click(object sender, EventArgs e)
+        private void btn5_Click_1(object sender, EventArgs e)
+        {
+            EnterNumber("5");
+        }
+
+        private void btn4_Click_1(object sender, EventArgs e)
+        {
+            EnterNumber("4");
+        }
+
+        private void btn9_Click_1(object sender, EventArgs e)
+        {
+            EnterNumber("9");
+        }
+
+        private void btn7_Click_1(object sender, EventArgs e)
+        {
+            EnterNumber("7");
+        }
+        private void btn8_Click_1(object sender, EventArgs e)
+        {
+            EnterNumber("8");
+        }
+
+        private void btnClear_Click_1(object sender, EventArgs e)
         {
             if (this._focusedControl != null)
             {
@@ -49,7 +81,7 @@ namespace KioskQMS
             }
         }
 
-        private void btnErase_Click(object sender, EventArgs e)
+        private void btnErase_Click_1(object sender, EventArgs e)
         {
             if (this._focusedControl != null && !String.IsNullOrWhiteSpace(this._focusedControl.Text))
             {
@@ -57,54 +89,7 @@ namespace KioskQMS
             }
         }
 
-        private void btn0_Click(object sender, EventArgs e)
-        {
-            EnterNumber("0");
-        }
-
-        private void btn1_Click(object sender, EventArgs e)
-        {
-            EnterNumber("1");
-        }
-
-        private void btn2_Click(object sender, EventArgs e)
-        {
-            EnterNumber("2");
-        }
-
-        private void btn3_Click(object sender, EventArgs e)
-        {
-            EnterNumber("3");
-        }
-
-        private void btn4_Click(object sender, EventArgs e)
-        {
-            EnterNumber("4");
-        }
-
-        private void btn5_Click(object sender, EventArgs e)
-        {
-            EnterNumber("5");
-        }
-
-        private void btn6_Click(object sender, EventArgs e)
-        {
-            EnterNumber("6");
-        }
-        private void btn7_Click(object sender, EventArgs e)
-        {
-            EnterNumber("7");
-        }
-
-        private void btn8_Click(object sender, EventArgs e)
-        {
-            EnterNumber("8");
-        }
-
-        private void btn9_Click(object sender, EventArgs e)
-        {
-            EnterNumber("9");
-        }
+ 
 
         private void EnterNumber(string number)
         {
@@ -135,9 +120,21 @@ namespace KioskQMS
             }
         }
 
-        private void txtAccountNumber_TextChanged(object sender, EventArgs e)
+        private void txtAmount_TextChanged_1(object sender, EventArgs e)
         {
 
         }
+
+        private void btnNext_Click_2(object sender, EventArgs e)
+        {
+            Validation();
+        }
+
+        private void btnBack_Click_2(object sender, EventArgs e)
+        {
+            this.Form.OpenForm(new FormServices(this.Transaction, this.Form));
+        }
+
+      
     }
 }
