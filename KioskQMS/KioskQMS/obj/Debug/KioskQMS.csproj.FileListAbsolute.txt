@@ -30,3 +30,35 @@ C:\Users\Alfa Shekynah\Desktop\New folder\qms-kiosk-machine\KioskQMS\KioskQMS\ob
 C:\Users\Alfa Shekynah\Desktop\New folder\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.pdb
 C:\Users\Alfa Shekynah\Desktop\New folder\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.csproj.AssemblyReference.cache
 C:\Users\Alfa Shekynah\Desktop\New folder\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.csproj.CopyComplete
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\KioskQMS.exe.config
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\KioskQMS.exe
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\KioskQMS.pdb
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\FontAwesome.Sharp.dll
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\Newtonsoft.Json.dll
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\Penguin.Threading.BackgroundWorker.dll
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\System.Net.Http.Extensions.dll
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\System.Net.Http.Formatting.dll
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\System.Net.Http.Primitives.dll
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\websocket-sharp.dll
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\Newtonsoft.Json.xml
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\Penguin.Threading.BackgroundWorker.xml
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\websocket-sharp.xml
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.csproj.AssemblyReference.cache
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormProcessing.resources
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormAccountNo.resources
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormServices.resources
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormDeposit.resources
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormFeedback.resources
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormKey.resources
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormCustomerType.resources
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormSMS.resources
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormSMSNumber.resources
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormStartScreen.resources
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormTicket.resources
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.MainForm.resources
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.Properties.Resources.resources
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.csproj.GenerateResource.cache
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.csproj.CoreCompileInputs.cache
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.csproj.CopyComplete
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.exe
+S:\1Project\QMS-kiosk-updated\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.pdb

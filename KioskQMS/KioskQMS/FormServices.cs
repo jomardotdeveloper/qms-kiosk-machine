@@ -83,7 +83,7 @@ namespace KioskQMS
 
         private void btnBack_Click_1(object sender, EventArgs e)
         {
-            this.Form.OpenForm(new FormCustomerType(this.Transaction, this.Form));
+            this.Form.OpenForm(new FormAccountNo(this.Transaction, this.Form));
         }
 
         private void LoadWindow()
