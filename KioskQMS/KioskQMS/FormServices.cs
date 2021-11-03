@@ -107,7 +107,6 @@ namespace KioskQMS
                 {
                     this.Transaction.WindowID = Convert.ToInt32(json["window_id"]);
                     this.Transaction.ProfileID = Convert.ToInt32(json["profile_id"]);
-                    
 
                     if(this.Transaction.ServiceID == 1)
                     {

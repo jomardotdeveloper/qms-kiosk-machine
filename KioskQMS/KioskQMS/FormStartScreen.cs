@@ -14,6 +14,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WebSocketSharp;
 
 namespace KioskQMS
 {
@@ -215,6 +216,7 @@ namespace KioskQMS
             {
                 this.Form.OpenForm(new FormAccountNo(this.Transaction, this.Form));
             }
+
         }
     }
 }

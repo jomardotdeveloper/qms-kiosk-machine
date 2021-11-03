@@ -69,8 +69,9 @@ namespace KioskQMS
             this.panel1.Controls.Add(this.tableLayoutPanel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1386, 139);
+            this.panel1.Size = new System.Drawing.Size(1848, 171);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -80,10 +81,11 @@ namespace KioskQMS
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1386, 139);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1848, 171);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -92,9 +94,10 @@ namespace KioskQMS
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Location = new System.Drawing.Point(4, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1380, 139);
+            this.label1.Size = new System.Drawing.Size(1840, 171);
             this.label1.TabIndex = 1;
             this.label1.Text = "Type Account Number";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -102,25 +105,28 @@ namespace KioskQMS
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 139);
+            this.panel2.Location = new System.Drawing.Point(0, 171);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(394, 586);
+            this.panel2.Size = new System.Drawing.Size(525, 721);
             this.panel2.TabIndex = 1;
             // 
             // panel3
             // 
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(992, 139);
+            this.panel3.Location = new System.Drawing.Point(1323, 171);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(394, 586);
+            this.panel3.Size = new System.Drawing.Size(525, 721);
             this.panel3.TabIndex = 1;
             // 
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 725);
+            this.panel4.Location = new System.Drawing.Point(0, 892);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1386, 63);
+            this.panel4.Size = new System.Drawing.Size(1848, 78);
             this.panel4.TabIndex = 1;
             // 
             // tableLayoutPanel2
@@ -131,20 +137,22 @@ namespace KioskQMS
             this.tableLayoutPanel2.Controls.Add(this.txtAccountNumber, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(394, 139);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(525, 171);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(598, 64);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(798, 79);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
             // txtAccountNumber
             // 
             this.txtAccountNumber.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtAccountNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAccountNumber.Location = new System.Drawing.Point(3, 3);
+            this.txtAccountNumber.Location = new System.Drawing.Point(4, 4);
+            this.txtAccountNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAccountNumber.Name = "txtAccountNumber";
-            this.txtAccountNumber.Size = new System.Drawing.Size(592, 47);
+            this.txtAccountNumber.Size = new System.Drawing.Size(790, 47);
             this.txtAccountNumber.TabIndex = 0;
             this.txtAccountNumber.TextChanged += new System.EventHandler(this.txtAccountNumber_TextChanged);
             // 
@@ -152,9 +160,10 @@ namespace KioskQMS
             // 
             this.panel5.Controls.Add(this.tableLayoutPanel4);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(394, 619);
+            this.panel5.Location = new System.Drawing.Point(525, 762);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(598, 106);
+            this.panel5.Size = new System.Drawing.Size(798, 130);
             this.panel5.TabIndex = 8;
             // 
             // tableLayoutPanel4
@@ -166,10 +175,11 @@ namespace KioskQMS
             this.tableLayoutPanel4.Controls.Add(this.btnBack, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(598, 106);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(798, 130);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
             // btnNext
@@ -183,9 +193,10 @@ namespace KioskQMS
             this.btnNext.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnNext.IconColor = System.Drawing.Color.Black;
             this.btnNext.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnNext.Location = new System.Drawing.Point(302, 3);
+            this.btnNext.Location = new System.Drawing.Point(403, 4);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(293, 100);
+            this.btnNext.Size = new System.Drawing.Size(391, 122);
             this.btnNext.TabIndex = 11;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = false;
@@ -202,9 +213,10 @@ namespace KioskQMS
             this.btnBack.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnBack.IconColor = System.Drawing.Color.Black;
             this.btnBack.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBack.Location = new System.Drawing.Point(3, 3);
+            this.btnBack.Location = new System.Drawing.Point(4, 4);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(293, 100);
+            this.btnBack.Size = new System.Drawing.Size(391, 122);
             this.btnBack.TabIndex = 10;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -213,17 +225,19 @@ namespace KioskQMS
             // panel6
             // 
             this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel6.Location = new System.Drawing.Point(394, 203);
+            this.panel6.Location = new System.Drawing.Point(525, 250);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 416);
+            this.panel6.Size = new System.Drawing.Size(267, 512);
             this.panel6.TabIndex = 9;
             // 
             // panel7
             // 
             this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel7.Location = new System.Drawing.Point(792, 203);
+            this.panel7.Location = new System.Drawing.Point(1056, 250);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(200, 416);
+            this.panel7.Size = new System.Drawing.Size(267, 512);
             this.panel7.TabIndex = 9;
             // 
             // tableLayoutPanel3
@@ -246,15 +260,16 @@ namespace KioskQMS
             this.tableLayoutPanel3.Controls.Add(this.btn8, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.btn7, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(594, 203);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(792, 250);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 4;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(198, 416);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(264, 512);
             this.tableLayoutPanel3.TabIndex = 11;
             // 
             // btnErase
@@ -268,9 +283,10 @@ namespace KioskQMS
             this.btnErase.IconChar = FontAwesome.Sharp.IconChar.Backspace;
             this.btnErase.IconColor = System.Drawing.Color.White;
             this.btnErase.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnErase.Location = new System.Drawing.Point(135, 315);
+            this.btnErase.Location = new System.Drawing.Point(180, 388);
+            this.btnErase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnErase.Name = "btnErase";
-            this.btnErase.Size = new System.Drawing.Size(60, 98);
+            this.btnErase.Size = new System.Drawing.Size(80, 120);
             this.btnErase.TabIndex = 11;
             this.btnErase.UseVisualStyleBackColor = false;
             this.btnErase.Click += new System.EventHandler(this.btnErase_Click_1);
@@ -286,9 +302,10 @@ namespace KioskQMS
             this.btn0.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn0.IconColor = System.Drawing.Color.Black;
             this.btn0.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn0.Location = new System.Drawing.Point(69, 315);
+            this.btn0.Location = new System.Drawing.Point(92, 388);
+            this.btn0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn0.Name = "btn0";
-            this.btn0.Size = new System.Drawing.Size(60, 98);
+            this.btn0.Size = new System.Drawing.Size(80, 120);
             this.btn0.TabIndex = 10;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = false;
@@ -305,9 +322,10 @@ namespace KioskQMS
             this.btnClear.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnClear.IconColor = System.Drawing.Color.Black;
             this.btnClear.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClear.Location = new System.Drawing.Point(3, 315);
+            this.btnClear.Location = new System.Drawing.Point(4, 388);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(60, 98);
+            this.btnClear.Size = new System.Drawing.Size(80, 120);
             this.btnClear.TabIndex = 9;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -324,9 +342,10 @@ namespace KioskQMS
             this.btn3.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn3.IconColor = System.Drawing.Color.Black;
             this.btn3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn3.Location = new System.Drawing.Point(135, 211);
+            this.btn3.Location = new System.Drawing.Point(180, 260);
+            this.btn3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(60, 98);
+            this.btn3.Size = new System.Drawing.Size(80, 120);
             this.btn3.TabIndex = 8;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
@@ -343,9 +362,10 @@ namespace KioskQMS
             this.btn2.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn2.IconColor = System.Drawing.Color.Black;
             this.btn2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn2.Location = new System.Drawing.Point(69, 211);
+            this.btn2.Location = new System.Drawing.Point(92, 260);
+            this.btn2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(60, 98);
+            this.btn2.Size = new System.Drawing.Size(80, 120);
             this.btn2.TabIndex = 7;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
@@ -362,9 +382,10 @@ namespace KioskQMS
             this.btn1.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn1.IconColor = System.Drawing.Color.Black;
             this.btn1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn1.Location = new System.Drawing.Point(3, 211);
+            this.btn1.Location = new System.Drawing.Point(4, 260);
+            this.btn1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(60, 98);
+            this.btn1.Size = new System.Drawing.Size(80, 120);
             this.btn1.TabIndex = 6;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
@@ -381,9 +402,10 @@ namespace KioskQMS
             this.btn6.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn6.IconColor = System.Drawing.Color.Black;
             this.btn6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn6.Location = new System.Drawing.Point(135, 107);
+            this.btn6.Location = new System.Drawing.Point(180, 132);
+            this.btn6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(60, 98);
+            this.btn6.Size = new System.Drawing.Size(80, 120);
             this.btn6.TabIndex = 5;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
@@ -400,9 +422,10 @@ namespace KioskQMS
             this.btn5.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn5.IconColor = System.Drawing.Color.Black;
             this.btn5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn5.Location = new System.Drawing.Point(69, 107);
+            this.btn5.Location = new System.Drawing.Point(92, 132);
+            this.btn5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(60, 98);
+            this.btn5.Size = new System.Drawing.Size(80, 120);
             this.btn5.TabIndex = 4;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
@@ -419,9 +442,10 @@ namespace KioskQMS
             this.btn4.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn4.IconColor = System.Drawing.Color.Black;
             this.btn4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn4.Location = new System.Drawing.Point(3, 107);
+            this.btn4.Location = new System.Drawing.Point(4, 132);
+            this.btn4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(60, 98);
+            this.btn4.Size = new System.Drawing.Size(80, 120);
             this.btn4.TabIndex = 3;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
@@ -438,9 +462,10 @@ namespace KioskQMS
             this.btn9.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn9.IconColor = System.Drawing.Color.Black;
             this.btn9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn9.Location = new System.Drawing.Point(135, 3);
+            this.btn9.Location = new System.Drawing.Point(180, 4);
+            this.btn9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(60, 98);
+            this.btn9.Size = new System.Drawing.Size(80, 120);
             this.btn9.TabIndex = 2;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
@@ -457,9 +482,10 @@ namespace KioskQMS
             this.btn8.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn8.IconColor = System.Drawing.Color.Black;
             this.btn8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn8.Location = new System.Drawing.Point(69, 3);
+            this.btn8.Location = new System.Drawing.Point(92, 4);
+            this.btn8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(60, 98);
+            this.btn8.Size = new System.Drawing.Size(80, 120);
             this.btn8.TabIndex = 1;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
@@ -476,9 +502,10 @@ namespace KioskQMS
             this.btn7.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn7.IconColor = System.Drawing.Color.Black;
             this.btn7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn7.Location = new System.Drawing.Point(3, 3);
+            this.btn7.Location = new System.Drawing.Point(4, 4);
+            this.btn7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(60, 98);
+            this.btn7.Size = new System.Drawing.Size(80, 120);
             this.btn7.TabIndex = 0;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
@@ -486,10 +513,10 @@ namespace KioskQMS
             // 
             // FormAccountNo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.ClientSize = new System.Drawing.Size(1848, 970);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel7);
@@ -500,6 +527,7 @@ namespace KioskQMS
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormAccountNo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAccountNo";

@@ -25,6 +25,7 @@ namespace KioskQMS
         private void btnNo_Click_1(object sender, EventArgs e)
         {
             this.Transaction.MobileNumber = null;
+            this.Transaction = TCreator.CreateTransaction(this.Transaction);
             this.Form.OpenForm(new FormTicket(this.Form, this.Transaction));
         }
 

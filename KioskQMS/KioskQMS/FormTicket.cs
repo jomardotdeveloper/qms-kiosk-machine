@@ -29,7 +29,7 @@ namespace KioskQMS
         private JArray Arr;
         //WEB SOCKET
         private WebSocket WbClient;
-        const string host = "ws://localhost:8080";
+        const string host = "ws://192.168.100.10:8090";
 
 
         public FormTicket(MainForm form, Transaction transaction)
@@ -37,7 +37,6 @@ namespace KioskQMS
             InitializeComponent();
             this.Form = form;
             this.Transaction = transaction;
-            //this.Arr = arr;
             this.WbClient = new WebSocket(host);
             this.WbClient.Connect();
             LoadToken();
@@ -46,49 +45,19 @@ namespace KioskQMS
         {
             TokenPrinter Printer = new TokenPrinter(this.lblToken.Text, this.lblService.Text, this.lblNumber.Text, this.ID, this.lblDate.Text);
             Printer.Print();
-            this.Form.OpenForm(new FormFeedback(this.Form, this.Transaction));
+            this.Form.OpenForm(new FormStartScreen(this.Form));
+            //this.Form.OpenForm(new FormFeedback(this.Form, this.Transaction));
         }
     
 
         private void LoadToken()
         {
-            this.Handler = new HttpClientHandler()
-            {
-                ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
-            };
 
-            this.Client = new HttpClient(this.Handler);
-            this.Client.BaseAddress = new Uri(Endpoints.BaseUrl);
-
-            //this.Transaction.Window = GetAvailableWindow();
-
-            //if (!IsCutOff())
-            //{
-            //    if (this.Transaction.Window == -1)
-            //    {
-            //        MessageBox.Show("Operation failed: There is no current service provider available for queuing. Please contact your system administrator.");
-            //        this.Form.OpenForm(new FormStartScreen(this.Form));
-            //    }
-            //    else
-            //    {
-            //        this.Transaction.Provider = GetServiceProvider(this.Transaction.Window);
-
-            //    }
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Operation failed: The system is not accepting new token. ");
-            //}
-
-            JArray tokenData = this.Arr;
-
-            this.lblToken.Text = tokenData[0]["transaction_token"].ToString();
-            this.lblService.Text = tokenData[0]["service_name"].ToString();
-            this.lblNumber.Text = tokenData[0]["mobile_number_id"].ToString() == "" ? "None" : tokenData[0]["mobile_number_val"].ToString();
-            this.lblId.Text = "ref. no: " + tokenData[0]["transaction_id"].ToString();
-            this.lblDate.Text = tokenData[0]["transaction_in_datetime"].ToString();
-            this.ID = tokenData[0]["transaction_id"].ToString();
-            this.Transaction.ID = Convert.ToInt32(this.ID);
+            this.lblToken.Text = this.Transaction.Token;
+            this.lblService.Text = GetServiceName(this.Transaction.ServiceID);
+            this.lblId.Text = "ref. no: " + this.Transaction.ID.ToString();
+            this.lblDate.Text = this.Transaction.Date;
+            this.ID = this.Transaction.ID.ToString();
 
             if (this.WbClient.IsAlive)
             {
@@ -98,24 +67,48 @@ namespace KioskQMS
                 string message = JsonConvert.SerializeObject(dict).ToString();
                 this.WbClient.Send(message);
             }
-
-
-            //var response = this.Client.PostAsJsonAsync(Endpoints.TransactionUrl, this.Transaction).Result;
-            //JObject json = JObject.Parse(response.Content.ReadAsStringAsync().Result);
-
-            //if (json["status"].ToString() == "1")
-            //{
-                
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Operation failed:There is a problem creating new token. Please contact your system administrator.");
-            //}
         }
 
         private void Exit()
         {
             this.Form.OpenForm(new FormStartScreen(this.Form));
+        }
+
+        private string GetServiceName(int id)
+        {
+            string name = "";
+            switch (id)
+            {
+                case 1:
+                    // code block
+                    name = "Cash Deposit";
+                    break;
+                case 2:
+                    // code block
+                    name = "Cash Withdrawal";
+                    break;
+                case 3:
+                    // code block
+                    name = "Checkout";
+                    break;
+                case 4:
+                    // code block
+                    name = "Cash Encashment";
+                    break;
+                case 5:
+                    name = "Bills Payment";
+                    // code block
+                    break;
+                case 6:
+                    name = "Loan Transaction / Application / Inquiry";
+                    // code block
+                    break;
+                case 7:
+                    name = "Time Deposit Transaction";
+                    // code block
+                    break;
+            }
+            return name;
         }
 
         private bool IsCutOff()

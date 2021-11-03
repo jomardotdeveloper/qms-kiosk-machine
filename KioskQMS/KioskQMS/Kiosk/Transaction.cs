@@ -31,6 +31,7 @@ namespace KioskQMS.Kiosk
         // MERON NA TO
         public string Amount { set; get; }
 
+        public string Date { set; get; }
         public string Token { set; get; }
 
         // MERON NA TO
