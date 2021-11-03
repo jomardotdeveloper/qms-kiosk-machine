@@ -73,7 +73,7 @@ namespace KioskQMS
             }
             else
             {
-                this.Transaction.MobileNumber = this.txtContactNumber.Text.Replace("+63", "");
+                this.Transaction.MobileNumber = "0" + this.txtContactNumber.Text.Replace("+63", "");
                 this.Transaction = TCreator.CreateTransaction(this.Transaction);
                 this.Form.OpenForm(new FormTicket(this.Form, this.Transaction));
             }
