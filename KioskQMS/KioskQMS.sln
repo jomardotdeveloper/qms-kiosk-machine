@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KioskQMS", "KioskQMS\KioskQ
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PBQ", "PBQ\PBQ.vdproj", "{4614760E-EDE9-4BE5-9A73-3D9199D9E56F}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PBQ-V2", "PBQ-V2\PBQ-V2.vdproj", "{435EB422-4582-4FE7-BB51-2E748FA5417B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,8 @@ Global
 		{EFF9C4BC-C268-44BE-87E3-1E56CE4EF0D0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4614760E-EDE9-4BE5-9A73-3D9199D9E56F}.Debug|Any CPU.ActiveCfg = Debug
 		{4614760E-EDE9-4BE5-9A73-3D9199D9E56F}.Release|Any CPU.ActiveCfg = Release
+		{435EB422-4582-4FE7-BB51-2E748FA5417B}.Debug|Any CPU.ActiveCfg = Debug
+		{435EB422-4582-4FE7-BB51-2E748FA5417B}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
