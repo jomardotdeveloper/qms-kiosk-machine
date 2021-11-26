@@ -218,5 +218,17 @@ namespace KioskQMS
             }
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Do you want to exit?", "Confirmation", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+
+            if (res == DialogResult.OK)
+            {
+                this.Close();
+                System.Windows.Forms.Application.ExitThread();
+                //Some task…  
+            }
+        }
     }
 }

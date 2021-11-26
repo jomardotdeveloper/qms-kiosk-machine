@@ -105,6 +105,14 @@ namespace KioskQMS.Kiosk
             DrawLine(GetID(), refNumberFont, Offset, 0);
             Offset += 40;
             DrawLine(GetDate(), dateFont, Offset, 0);
+            Offset += 40;
+            DrawLine("                ", dateFont, Offset, 0);
+            Offset += 40;
+            DrawLine("                ", dateFont, Offset, 0);
+            Offset += 40;
+            DrawLine("                ", dateFont, Offset, 0);
+            Offset += 40;
+            DrawLine("----------------------------------------------------", dateFont, Offset, 0);
         }
 
         private string GetToken()
