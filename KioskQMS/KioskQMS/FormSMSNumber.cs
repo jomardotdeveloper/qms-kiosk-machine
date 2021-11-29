@@ -56,7 +56,9 @@ namespace KioskQMS
 
         private void FormSMSNumber_Load(object sender, EventArgs e)
         {
-
+            txtContactNumber.Select();
+            this.ActiveControl = txtContactNumber;
+            txtContactNumber.Focus();
         }
 
         private void btnBack_Click_1(object sender, EventArgs e)

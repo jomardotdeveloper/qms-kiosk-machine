@@ -32,10 +32,21 @@ namespace KioskQMS
             this.Transaction = transaction;
             this.txtAccountNumber.GotFocus += TextBox_GotFocus;
             this.Form = form;
+            this.txtAccountNumber.Focus();
+            //this.ActiveControl = 
+            Load += new EventHandler(ProgramViwer_Load);
+
         }
         private void btnBack_Click_1(object sender, EventArgs e)
         {
             this.Form.OpenForm(new FormStartScreen(this.Form));
+        }
+
+        private void ProgramViwer_Load(object sender, System.EventArgs e)
+        {
+            txtAccountNumber.Select();
+            this.ActiveControl = txtAccountNumber;
+            txtAccountNumber.Focus();
         }
 
         private void btnNext_Click_1(object sender, EventArgs e)
@@ -212,6 +223,19 @@ namespace KioskQMS
                 && splitted_acc_number[2].Length == 2 && splitted_acc_number[3].Length == 6 && splitted_acc_number[4].Length == 1;
         }
 
-      
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

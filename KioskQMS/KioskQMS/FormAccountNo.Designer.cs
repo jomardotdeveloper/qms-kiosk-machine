@@ -29,11 +29,6 @@ namespace KioskQMS
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.txtAccountNumber = new System.Windows.Forms.TextBox();
@@ -41,79 +36,33 @@ namespace KioskQMS
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.btnNext = new FontAwesome.Sharp.IconButton();
             this.btnBack = new FontAwesome.Sharp.IconButton();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnErase = new FontAwesome.Sharp.IconButton();
-            this.btn0 = new FontAwesome.Sharp.IconButton();
-            this.btnClear = new FontAwesome.Sharp.IconButton();
-            this.btn3 = new FontAwesome.Sharp.IconButton();
-            this.btn2 = new FontAwesome.Sharp.IconButton();
-            this.btn1 = new FontAwesome.Sharp.IconButton();
-            this.btn6 = new FontAwesome.Sharp.IconButton();
-            this.btn5 = new FontAwesome.Sharp.IconButton();
-            this.btn4 = new FontAwesome.Sharp.IconButton();
-            this.btn9 = new FontAwesome.Sharp.IconButton();
             this.btn8 = new FontAwesome.Sharp.IconButton();
+            this.btn9 = new FontAwesome.Sharp.IconButton();
+            this.btn4 = new FontAwesome.Sharp.IconButton();
+            this.btn5 = new FontAwesome.Sharp.IconButton();
+            this.btn6 = new FontAwesome.Sharp.IconButton();
+            this.btn1 = new FontAwesome.Sharp.IconButton();
+            this.btn2 = new FontAwesome.Sharp.IconButton();
+            this.btn3 = new FontAwesome.Sharp.IconButton();
+            this.btnClear = new FontAwesome.Sharp.IconButton();
+            this.btn0 = new FontAwesome.Sharp.IconButton();
+            this.btnErase = new FontAwesome.Sharp.IconButton();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.btn7 = new FontAwesome.Sharp.IconButton();
-            this.panel1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.tableLayoutPanel1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1386, 139);
-            this.panel1.TabIndex = 0;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1386, 139);
-            this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1380, 139);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Type Account Number";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 139);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(394, 586);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(992, 139);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(394, 586);
-            this.panel3.TabIndex = 1;
             // 
             // panel4
             // 
@@ -210,14 +159,6 @@ namespace KioskQMS
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
             // 
-            // panel6
-            // 
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel6.Location = new System.Drawing.Point(394, 203);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 416);
-            this.panel6.TabIndex = 9;
-            // 
             // panel7
             // 
             this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
@@ -225,6 +166,214 @@ namespace KioskQMS
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(200, 416);
             this.panel7.TabIndex = 9;
+            // 
+            // btn8
+            // 
+            this.btn8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.btn8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn8.FlatAppearance.BorderSize = 0;
+            this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn8.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn8.IconColor = System.Drawing.Color.Black;
+            this.btn8.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn8.Location = new System.Drawing.Point(69, 3);
+            this.btn8.Name = "btn8";
+            this.btn8.Size = new System.Drawing.Size(60, 98);
+            this.btn8.TabIndex = 1;
+            this.btn8.Text = "8";
+            this.btn8.UseVisualStyleBackColor = false;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click_1);
+            // 
+            // btn9
+            // 
+            this.btn9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.btn9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn9.FlatAppearance.BorderSize = 0;
+            this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn9.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn9.IconColor = System.Drawing.Color.Black;
+            this.btn9.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn9.Location = new System.Drawing.Point(135, 3);
+            this.btn9.Name = "btn9";
+            this.btn9.Size = new System.Drawing.Size(60, 98);
+            this.btn9.TabIndex = 2;
+            this.btn9.Text = "9";
+            this.btn9.UseVisualStyleBackColor = false;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click_1);
+            // 
+            // btn4
+            // 
+            this.btn4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.btn4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn4.FlatAppearance.BorderSize = 0;
+            this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn4.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn4.IconColor = System.Drawing.Color.Black;
+            this.btn4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn4.Location = new System.Drawing.Point(3, 107);
+            this.btn4.Name = "btn4";
+            this.btn4.Size = new System.Drawing.Size(60, 98);
+            this.btn4.TabIndex = 3;
+            this.btn4.Text = "4";
+            this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click_1);
+            // 
+            // btn5
+            // 
+            this.btn5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.btn5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn5.FlatAppearance.BorderSize = 0;
+            this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn5.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn5.IconColor = System.Drawing.Color.Black;
+            this.btn5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn5.Location = new System.Drawing.Point(69, 107);
+            this.btn5.Name = "btn5";
+            this.btn5.Size = new System.Drawing.Size(60, 98);
+            this.btn5.TabIndex = 4;
+            this.btn5.Text = "5";
+            this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click_1);
+            // 
+            // btn6
+            // 
+            this.btn6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.btn6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn6.FlatAppearance.BorderSize = 0;
+            this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn6.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn6.IconColor = System.Drawing.Color.Black;
+            this.btn6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn6.Location = new System.Drawing.Point(135, 107);
+            this.btn6.Name = "btn6";
+            this.btn6.Size = new System.Drawing.Size(60, 98);
+            this.btn6.TabIndex = 5;
+            this.btn6.Text = "6";
+            this.btn6.UseVisualStyleBackColor = false;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click_1);
+            // 
+            // btn1
+            // 
+            this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.btn1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn1.FlatAppearance.BorderSize = 0;
+            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn1.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn1.IconColor = System.Drawing.Color.Black;
+            this.btn1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn1.Location = new System.Drawing.Point(3, 211);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(60, 98);
+            this.btn1.TabIndex = 6;
+            this.btn1.Text = "1";
+            this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.btn1_Click_1);
+            // 
+            // btn2
+            // 
+            this.btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.btn2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn2.FlatAppearance.BorderSize = 0;
+            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn2.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn2.IconColor = System.Drawing.Color.Black;
+            this.btn2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn2.Location = new System.Drawing.Point(69, 211);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(60, 98);
+            this.btn2.TabIndex = 7;
+            this.btn2.Text = "2";
+            this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click_1);
+            // 
+            // btn3
+            // 
+            this.btn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.btn3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn3.FlatAppearance.BorderSize = 0;
+            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn3.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn3.IconColor = System.Drawing.Color.Black;
+            this.btn3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn3.Location = new System.Drawing.Point(135, 211);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(60, 98);
+            this.btn3.TabIndex = 8;
+            this.btn3.Text = "3";
+            this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click_1);
+            // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.btnClear.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnClear.FlatAppearance.BorderSize = 0;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnClear.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnClear.IconColor = System.Drawing.Color.Black;
+            this.btnClear.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnClear.Location = new System.Drawing.Point(3, 315);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(60, 98);
+            this.btnClear.TabIndex = 9;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click_1);
+            // 
+            // btn0
+            // 
+            this.btn0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.btn0.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn0.FlatAppearance.BorderSize = 0;
+            this.btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn0.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn0.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn0.IconColor = System.Drawing.Color.Black;
+            this.btn0.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn0.Location = new System.Drawing.Point(69, 315);
+            this.btn0.Name = "btn0";
+            this.btn0.Size = new System.Drawing.Size(60, 98);
+            this.btn0.TabIndex = 10;
+            this.btn0.Text = "0";
+            this.btn0.UseVisualStyleBackColor = false;
+            this.btn0.Click += new System.EventHandler(this.btn0_Click_1);
+            // 
+            // btnErase
+            // 
+            this.btnErase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.btnErase.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnErase.FlatAppearance.BorderSize = 0;
+            this.btnErase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnErase.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnErase.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnErase.IconChar = FontAwesome.Sharp.IconChar.Backspace;
+            this.btnErase.IconColor = System.Drawing.Color.White;
+            this.btnErase.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnErase.Location = new System.Drawing.Point(135, 315);
+            this.btnErase.Name = "btnErase";
+            this.btnErase.Size = new System.Drawing.Size(60, 98);
+            this.btnErase.TabIndex = 11;
+            this.btnErase.UseVisualStyleBackColor = false;
+            this.btnErase.Click += new System.EventHandler(this.btnErase_Click_1);
             // 
             // tableLayoutPanel3
             // 
@@ -257,214 +406,6 @@ namespace KioskQMS
             this.tableLayoutPanel3.Size = new System.Drawing.Size(198, 416);
             this.tableLayoutPanel3.TabIndex = 11;
             // 
-            // btnErase
-            // 
-            this.btnErase.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.btnErase.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnErase.FlatAppearance.BorderSize = 0;
-            this.btnErase.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnErase.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnErase.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnErase.IconChar = FontAwesome.Sharp.IconChar.Backspace;
-            this.btnErase.IconColor = System.Drawing.Color.White;
-            this.btnErase.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnErase.Location = new System.Drawing.Point(135, 315);
-            this.btnErase.Name = "btnErase";
-            this.btnErase.Size = new System.Drawing.Size(60, 98);
-            this.btnErase.TabIndex = 11;
-            this.btnErase.UseVisualStyleBackColor = false;
-            this.btnErase.Click += new System.EventHandler(this.btnErase_Click_1);
-            // 
-            // btn0
-            // 
-            this.btn0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.btn0.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn0.FlatAppearance.BorderSize = 0;
-            this.btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn0.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn0.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btn0.IconColor = System.Drawing.Color.Black;
-            this.btn0.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn0.Location = new System.Drawing.Point(69, 315);
-            this.btn0.Name = "btn0";
-            this.btn0.Size = new System.Drawing.Size(60, 98);
-            this.btn0.TabIndex = 10;
-            this.btn0.Text = "0";
-            this.btn0.UseVisualStyleBackColor = false;
-            this.btn0.Click += new System.EventHandler(this.btn0_Click_1);
-            // 
-            // btnClear
-            // 
-            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.btnClear.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnClear.FlatAppearance.BorderSize = 0;
-            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnClear.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnClear.IconColor = System.Drawing.Color.Black;
-            this.btnClear.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClear.Location = new System.Drawing.Point(3, 315);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(60, 98);
-            this.btnClear.TabIndex = 9;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click_1);
-            // 
-            // btn3
-            // 
-            this.btn3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.btn3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn3.FlatAppearance.BorderSize = 0;
-            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btn3.IconColor = System.Drawing.Color.Black;
-            this.btn3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn3.Location = new System.Drawing.Point(135, 211);
-            this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(60, 98);
-            this.btn3.TabIndex = 8;
-            this.btn3.Text = "3";
-            this.btn3.UseVisualStyleBackColor = false;
-            this.btn3.Click += new System.EventHandler(this.btn3_Click_1);
-            // 
-            // btn2
-            // 
-            this.btn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.btn2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn2.FlatAppearance.BorderSize = 0;
-            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btn2.IconColor = System.Drawing.Color.Black;
-            this.btn2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn2.Location = new System.Drawing.Point(69, 211);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(60, 98);
-            this.btn2.TabIndex = 7;
-            this.btn2.Text = "2";
-            this.btn2.UseVisualStyleBackColor = false;
-            this.btn2.Click += new System.EventHandler(this.btn2_Click_1);
-            // 
-            // btn1
-            // 
-            this.btn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.btn1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn1.FlatAppearance.BorderSize = 0;
-            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btn1.IconColor = System.Drawing.Color.Black;
-            this.btn1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn1.Location = new System.Drawing.Point(3, 211);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(60, 98);
-            this.btn1.TabIndex = 6;
-            this.btn1.Text = "1";
-            this.btn1.UseVisualStyleBackColor = false;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click_1);
-            // 
-            // btn6
-            // 
-            this.btn6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.btn6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn6.FlatAppearance.BorderSize = 0;
-            this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn6.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btn6.IconColor = System.Drawing.Color.Black;
-            this.btn6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn6.Location = new System.Drawing.Point(135, 107);
-            this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(60, 98);
-            this.btn6.TabIndex = 5;
-            this.btn6.Text = "6";
-            this.btn6.UseVisualStyleBackColor = false;
-            this.btn6.Click += new System.EventHandler(this.btn6_Click_1);
-            // 
-            // btn5
-            // 
-            this.btn5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.btn5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn5.FlatAppearance.BorderSize = 0;
-            this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn5.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btn5.IconColor = System.Drawing.Color.Black;
-            this.btn5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn5.Location = new System.Drawing.Point(69, 107);
-            this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(60, 98);
-            this.btn5.TabIndex = 4;
-            this.btn5.Text = "5";
-            this.btn5.UseVisualStyleBackColor = false;
-            this.btn5.Click += new System.EventHandler(this.btn5_Click_1);
-            // 
-            // btn4
-            // 
-            this.btn4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.btn4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn4.FlatAppearance.BorderSize = 0;
-            this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn4.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btn4.IconColor = System.Drawing.Color.Black;
-            this.btn4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn4.Location = new System.Drawing.Point(3, 107);
-            this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(60, 98);
-            this.btn4.TabIndex = 3;
-            this.btn4.Text = "4";
-            this.btn4.UseVisualStyleBackColor = false;
-            this.btn4.Click += new System.EventHandler(this.btn4_Click_1);
-            // 
-            // btn9
-            // 
-            this.btn9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.btn9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn9.FlatAppearance.BorderSize = 0;
-            this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn9.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btn9.IconColor = System.Drawing.Color.Black;
-            this.btn9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn9.Location = new System.Drawing.Point(135, 3);
-            this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(60, 98);
-            this.btn9.TabIndex = 2;
-            this.btn9.Text = "9";
-            this.btn9.UseVisualStyleBackColor = false;
-            this.btn9.Click += new System.EventHandler(this.btn9_Click_1);
-            // 
-            // btn8
-            // 
-            this.btn8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.btn8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn8.FlatAppearance.BorderSize = 0;
-            this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn8.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btn8.IconColor = System.Drawing.Color.Black;
-            this.btn8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn8.Location = new System.Drawing.Point(69, 3);
-            this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(60, 98);
-            this.btn8.TabIndex = 1;
-            this.btn8.Text = "8";
-            this.btn8.UseVisualStyleBackColor = false;
-            this.btn8.Click += new System.EventHandler(this.btn8_Click_1);
-            // 
             // btn7
             // 
             this.btn7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
@@ -483,6 +424,65 @@ namespace KioskQMS
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
             this.btn7.Click += new System.EventHandler(this.btn7_Click_1);
+            // 
+            // panel3
+            // 
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(992, 139);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(394, 586);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel6
+            // 
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.Location = new System.Drawing.Point(394, 203);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(200, 416);
+            this.panel6.TabIndex = 9;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.tableLayoutPanel1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1386, 139);
+            this.panel1.TabIndex = 0;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1386, 139);
+            this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1380, 139);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Type Account Number";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 139);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(394, 586);
+            this.panel2.TabIndex = 1;
             // 
             // FormAccountNo
             // 
@@ -504,46 +504,45 @@ namespace KioskQMS
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAccountNo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.panel1.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TextBox txtAccountNumber;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private FontAwesome.Sharp.IconButton btnErase;
-        private FontAwesome.Sharp.IconButton btn0;
-        private FontAwesome.Sharp.IconButton btnClear;
-        private FontAwesome.Sharp.IconButton btn3;
-        private FontAwesome.Sharp.IconButton btn2;
-        private FontAwesome.Sharp.IconButton btn1;
-        private FontAwesome.Sharp.IconButton btn6;
-        private FontAwesome.Sharp.IconButton btn5;
-        private FontAwesome.Sharp.IconButton btn4;
-        private FontAwesome.Sharp.IconButton btn9;
-        private FontAwesome.Sharp.IconButton btn8;
-        private FontAwesome.Sharp.IconButton btn7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private FontAwesome.Sharp.IconButton btnNext;
         private FontAwesome.Sharp.IconButton btnBack;
+        private FontAwesome.Sharp.IconButton btn8;
+        private FontAwesome.Sharp.IconButton btn9;
+        private FontAwesome.Sharp.IconButton btn4;
+        private FontAwesome.Sharp.IconButton btn5;
+        private FontAwesome.Sharp.IconButton btn6;
+        private FontAwesome.Sharp.IconButton btn1;
+        private FontAwesome.Sharp.IconButton btn2;
+        private FontAwesome.Sharp.IconButton btn3;
+        private FontAwesome.Sharp.IconButton btnClear;
+        private FontAwesome.Sharp.IconButton btn0;
+        private FontAwesome.Sharp.IconButton btnErase;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private FontAwesome.Sharp.IconButton btn7;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
     }
 }

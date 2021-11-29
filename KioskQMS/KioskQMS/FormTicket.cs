@@ -29,7 +29,7 @@ namespace KioskQMS
         private JArray Arr;
         //WEB SOCKET
         private WebSocket WbClient;
-        const string host = "ws://192.168.254.101:8090";
+        const string host = "ws://74.63.204.84:8090";
 
 
         public FormTicket(MainForm form, Transaction transaction)

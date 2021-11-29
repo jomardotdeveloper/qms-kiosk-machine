@@ -23,8 +23,15 @@ namespace KioskQMS
             this.Transaction = transaction;
             this.txtAmount.GotFocus += TextBox_GotFocus;
             this.Form = form;
+            Load += new EventHandler(ProgramViwer_Load);
         }
-        
+        private void ProgramViwer_Load(object sender, System.EventArgs e)
+        {
+            txtAmount.Select();
+            this.ActiveControl = txtAmount;
+            txtAmount.Focus();
+        }
+
         private void btn0_Click_1(object sender, EventArgs e)
         {
             EnterNumber("0");
