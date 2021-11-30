@@ -127,10 +127,6 @@ namespace KioskQMS
             }
         }
 
-        private void txtAmount_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnNext_Click_2(object sender, EventArgs e)
         {
@@ -142,6 +138,9 @@ namespace KioskQMS
             this.Form.OpenForm(new FormServices(this.Transaction, this.Form));
         }
 
-      
+        private void txtAmount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
