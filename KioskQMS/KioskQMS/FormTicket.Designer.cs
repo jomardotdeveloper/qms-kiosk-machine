@@ -74,8 +74,8 @@ namespace KioskQMS
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.6183F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.78938F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.86194F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.64375F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.20736F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.92495F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.8215F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.879263F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 76F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
@@ -110,9 +110,9 @@ namespace KioskQMS
             this.lblId.AutoSize = true;
             this.lblId.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblId.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(3, 417);
+            this.lblId.Location = new System.Drawing.Point(3, 394);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(528, 55);
+            this.lblId.Size = new System.Drawing.Size(528, 78);
             this.lblId.TabIndex = 5;
             this.lblId.Text = "ref. no: 00000";
             this.lblId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -121,13 +121,14 @@ namespace KioskQMS
             // 
             this.lblNumber.AutoSize = true;
             this.lblNumber.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblNumber.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumber.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumber.Location = new System.Drawing.Point(3, 350);
             this.lblNumber.Name = "lblNumber";
-            this.lblNumber.Size = new System.Drawing.Size(528, 67);
+            this.lblNumber.Size = new System.Drawing.Size(528, 44);
             this.lblNumber.TabIndex = 4;
             this.lblNumber.Text = "09271234567";
             this.lblNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNumber.Click += new System.EventHandler(this.lblNumber_Click_1);
             // 
             // lblService
             // 

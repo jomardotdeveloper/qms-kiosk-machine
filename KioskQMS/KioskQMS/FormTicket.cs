@@ -35,6 +35,7 @@ namespace KioskQMS
         public FormTicket(MainForm form, Transaction transaction)
         {
             InitializeComponent();
+            lblNumber.Visible = false;
             this.Form = form;
             this.Transaction = transaction;
             this.WbClient = new WebSocket(host);
@@ -311,6 +312,9 @@ namespace KioskQMS
 
         }
 
-        
+        private void lblNumber_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
