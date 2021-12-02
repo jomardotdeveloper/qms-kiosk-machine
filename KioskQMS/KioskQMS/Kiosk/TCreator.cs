@@ -49,7 +49,7 @@ namespace KioskQMS.Kiosk
 
             transaction.Token = json["token"].ToString();
             transaction.ID = Convert.ToInt32(json["id"]);
-            transaction.Date = json["created_at"].ToString();
+            transaction.Date = json["in"].ToString();
 
             return transaction;
 
