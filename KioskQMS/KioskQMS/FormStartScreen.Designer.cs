@@ -47,8 +47,9 @@ namespace KioskQMS
             this.panel1.Controls.Add(this.tableLayoutPanel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1386, 788);
+            this.panel1.Size = new System.Drawing.Size(1848, 970);
             this.panel1.TabIndex = 6;
             // 
             // btnStart
@@ -57,7 +58,7 @@ namespace KioskQMS
             this.btnStart.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
             this.btnStart.ButtonImage = null;
             this.btnStart.ButtonStyle = XanderUI.XUIButton.Style.MaterialRounded;
-            this.btnStart.ButtonText = "Press here to start";
+            this.btnStart.ButtonText = "TAP TO START";
             this.btnStart.ClickBackColor = System.Drawing.Color.Blue;
             this.btnStart.ClickTextColor = System.Drawing.Color.DodgerBlue;
             this.btnStart.CornerRadius = 5;
@@ -66,9 +67,10 @@ namespace KioskQMS
             this.btnStart.HoverBackgroundColor = System.Drawing.Color.Blue;
             this.btnStart.HoverTextColor = System.Drawing.Color.DodgerBlue;
             this.btnStart.ImagePosition = XanderUI.XUIButton.imgPosition.Left;
-            this.btnStart.Location = new System.Drawing.Point(375, 232);
+            this.btnStart.Location = new System.Drawing.Point(500, 286);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(638, 123);
+            this.btnStart.Size = new System.Drawing.Size(851, 151);
             this.btnStart.TabIndex = 5;
             this.btnStart.TextColor = System.Drawing.Color.White;
             this.btnStart.Vertical_Alignment = System.Drawing.StringAlignment.Center;
@@ -82,20 +84,22 @@ namespace KioskQMS
             this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 88F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 108F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.84793F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1386, 243);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1848, 299);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::KioskQMS.Properties.Resources.orif;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 91);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 112);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1380, 149);
+            this.pictureBox1.Size = new System.Drawing.Size(1840, 183);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -103,13 +107,14 @@ namespace KioskQMS
             // 
             // FormStartScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.ClientSize = new System.Drawing.Size(1386, 788);
+            this.ClientSize = new System.Drawing.Size(1848, 970);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MinimumSize = new System.Drawing.Size(1364, 728);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(1819, 896);
             this.Name = "FormStartScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormStartScreen";

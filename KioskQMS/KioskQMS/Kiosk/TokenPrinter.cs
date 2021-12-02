@@ -95,7 +95,6 @@ namespace KioskQMS.Kiosk
             Font dateFont = new Font("Arial", 12);
 
             int Offset = 10;
-
             DrawLine("Ticket Number", titleFont, Offset, 0);
             Offset += 40;
             DrawLine(GetToken(), tokenFont, Offset, 0);
@@ -106,6 +105,14 @@ namespace KioskQMS.Kiosk
             Offset += 40;
             DrawLine(GetDate(), dateFont, Offset, 0);
             Offset += 40;
+            DrawLine("                                     ", refNumberFont, Offset, 0);
+            Offset += 40;
+            DrawLine("                                     ", refNumberFont, Offset, 0);
+            Offset += 40;
+            DrawLine("                                     ", refNumberFont, Offset, 0);
+            Offset += 40;
+            DrawLine("                  .                   ", refNumberFont, Offset, 0);
+
         }
 
         private string GetToken()

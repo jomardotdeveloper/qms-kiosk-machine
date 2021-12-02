@@ -34,6 +34,7 @@ namespace KioskQMS.Kiosk
             if(transaction.MobileNumber != null)
             {
                 data.Add("mobile_number", transaction.MobileNumber);
+                data.Add("is_notifiable", "1");
             }
 
             if (transaction.Amount != null)
