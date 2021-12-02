@@ -68,7 +68,7 @@ namespace KioskQMS
 
                 string message = JsonConvert.SerializeObject(dict).ToString();
                 this.WbClient.Send(message);
-            }s
+            }
         }
 
         private void Exit()
