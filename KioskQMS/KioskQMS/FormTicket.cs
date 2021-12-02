@@ -64,10 +64,11 @@ namespace KioskQMS
             {
                 IDictionary<string, string> dict = new Dictionary<string, string>();
                 dict.Add("message", "newCustomer");
+                dict.Add("window_id", Transaction.WindowID.ToString());
 
                 string message = JsonConvert.SerializeObject(dict).ToString();
                 this.WbClient.Send(message);
-            }
+            }s
         }
 
         private void Exit()
