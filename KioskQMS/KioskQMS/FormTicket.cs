@@ -36,6 +36,7 @@ namespace KioskQMS
         {
             InitializeComponent();
             lblNumber.Visible = false;
+            //MessageBox.Show(transaction.MD.ToString());
             this.Form = form;
             this.Transaction = transaction;
             this.WbClient = new WebSocket(host);
@@ -44,8 +45,8 @@ namespace KioskQMS
         }
         private void btnProceed_Click_1(object sender, EventArgs e)
         {
-            TokenPrinter Printer = new TokenPrinter(this.lblToken.Text, this.lblService.Text, this.lblNumber.Text, this.ID, this.lblDate.Text);
-            Printer.Print();
+            //TokenPrinter Printer = new TokenPrinter(this.lblToken.Text, this.lblService.Text, this.lblNumber.Text, this.ID, this.lblDate.Text);
+            //Printer.Print();
             this.Form.OpenForm(new FormStartScreen(this.Form));
             //this.Form.OpenForm(new FormFeedback(this.Form, this.Transaction));
         }
@@ -56,7 +57,7 @@ namespace KioskQMS
 
             this.lblToken.Text = this.Transaction.Token;
             this.lblService.Text = GetServiceName(this.Transaction.ServiceID);
-            this.lblId.Text = "ref. no: " + this.Transaction.ID.ToString();
+            this.lblId.Text = "Ref. no: " + this.Transaction.ID.ToString();
             this.lblDate.Text = this.Transaction.Date;
             this.ID = this.Transaction.ID.ToString();
 
@@ -69,6 +70,9 @@ namespace KioskQMS
                 string message = JsonConvert.SerializeObject(dict).ToString();
                 this.WbClient.Send(message);
             }
+
+            TokenPrinter Printer = new TokenPrinter(this.lblToken.Text, this.lblService.Text, this.lblNumber.Text, this.ID, this.lblDate.Text);
+            Printer.Print();
         }
 
         private void Exit()

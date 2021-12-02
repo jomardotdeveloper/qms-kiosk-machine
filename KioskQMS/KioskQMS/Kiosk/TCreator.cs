@@ -46,10 +46,14 @@ namespace KioskQMS.Kiosk
             var response = Client.PostAsJsonAsync(Endpoints.TransactionUrl, data).Result;
             JObject json = JObject.Parse(response.Content.ReadAsStringAsync().Result);
 
+            DateTime oDate = Convert.ToDateTime(json["created_at"].ToString());
 
+            DateTime myDate = TimeZoneInfo.ConvertTimeFromUtc(oDate, TimeZoneInfo.Local);
+
+            transaction.MD = myDate;
             transaction.Token = json["token"].ToString();
             transaction.ID = Convert.ToInt32(json["id"]);
-            transaction.Date = json["in"].ToString();
+            transaction.Date = myDate.ToString();
 
             return transaction;
 

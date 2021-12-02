@@ -37,5 +37,7 @@ namespace KioskQMS.Kiosk
         // MERON NA TO
         public bool IsPriority { set; get; }
 
+        public DateTime MD { set; get; }
+
     }
 }

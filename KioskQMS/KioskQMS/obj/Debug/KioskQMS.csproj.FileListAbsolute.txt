@@ -222,3 +222,34 @@ C:\Users\ANDREI GERALDO\Downloads\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\
 C:\Users\ANDREI GERALDO\Downloads\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.csproj.CopyComplete
 C:\Users\ANDREI GERALDO\Downloads\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.exe
 C:\Users\ANDREI GERALDO\Downloads\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.pdb
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\KioskQMS.exe.config
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\KioskQMS.exe
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\KioskQMS.pdb
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\Penguin.Threading.BackgroundWorker.dll
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\websocket-sharp.dll
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\Penguin.Threading.BackgroundWorker.xml
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\bin\Debug\websocket-sharp.xml
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.csproj.AssemblyReference.cache
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormProcessing.resources
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormAccountNo.resources
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormServices.resources
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormDeposit.resources
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormFeedback.resources
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormKey.resources
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormCustomerType.resources
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormSMS.resources
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormSMSNumber.resources
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormStartScreen.resources
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormTicket.resources
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.MainForm.resources
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.Properties.Resources.resources
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.csproj.GenerateResource.cache
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.csproj.CoreCompileInputs.cache
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.exe
+C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.pdb
