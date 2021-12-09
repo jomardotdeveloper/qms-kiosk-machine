@@ -34,6 +34,9 @@ namespace KioskQMS
             this.Form.OpenForm(new FormSMSNumber(this.Transaction, this.Form));
         }
 
-        
+        private void FormSMS_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

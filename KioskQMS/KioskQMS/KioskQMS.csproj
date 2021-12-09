@@ -110,6 +110,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormBillsPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBillsPayment.Designer.cs">
+      <DependentUpon>FormBillsPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoans.Designer.cs">
+      <DependentUpon>FormLoans.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormProcessing.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +201,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormBillsPayment.resx">
+      <DependentUpon>FormBillsPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoans.resx">
+      <DependentUpon>FormLoans.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormProcessing.resx">
       <DependentUpon>FormProcessing.cs</DependentUpon>
     </EmbeddedResource>
