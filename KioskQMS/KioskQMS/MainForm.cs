@@ -12,6 +12,7 @@ namespace KioskQMS
 {
     public partial class MainForm : Form
     {
+        private Form prevForm; 
         private Form currentChildForm;
         public MainForm()
         {
@@ -19,10 +20,16 @@ namespace KioskQMS
             OpenForm(new FormStartScreen(this));
         }
 
+        public Form PrevForm()
+        {
+            return this.prevForm;
+        }
+
         public void OpenForm(Form form)
         {
             if(currentChildForm != null)
             {
+                prevForm = currentChildForm;
                 currentChildForm.Close();
             }
 

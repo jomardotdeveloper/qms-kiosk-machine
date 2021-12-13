@@ -39,7 +39,6 @@ namespace KioskQMS
             this.panel5 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnBack = new FontAwesome.Sharp.IconButton();
-            this.btnTime = new FontAwesome.Sharp.IconButton();
             this.btnLoan = new FontAwesome.Sharp.IconButton();
             this.btnBill = new FontAwesome.Sharp.IconButton();
             this.btnCheckEncashment = new FontAwesome.Sharp.IconButton();
@@ -143,7 +142,6 @@ namespace KioskQMS
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.Controls.Add(this.btnBack, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.btnTime, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.btnLoan, 2, 1);
             this.tableLayoutPanel2.Controls.Add(this.btnBill, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.btnCheckEncashment, 0, 1);
@@ -178,25 +176,6 @@ namespace KioskQMS
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click_1);
-            // 
-            // btnTime
-            // 
-            this.btnTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.btnTime.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnTime.FlatAppearance.BorderSize = 0;
-            this.btnTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTime.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnTime.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnTime.IconColor = System.Drawing.Color.Black;
-            this.btnTime.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnTime.Location = new System.Drawing.Point(3, 161);
-            this.btnTime.Name = "btnTime";
-            this.btnTime.Size = new System.Drawing.Size(273, 73);
-            this.btnTime.TabIndex = 6;
-            this.btnTime.Text = "Time Deposit Transaction";
-            this.btnTime.UseVisualStyleBackColor = false;
-            this.btnTime.Click += new System.EventHandler(this.btnTime_Click_1);
             // 
             // btnLoan
             // 
@@ -251,7 +230,7 @@ namespace KioskQMS
             this.btnCheckEncashment.Name = "btnCheckEncashment";
             this.btnCheckEncashment.Size = new System.Drawing.Size(273, 73);
             this.btnCheckEncashment.TabIndex = 3;
-            this.btnCheckEncashment.Text = "Check Encashment";
+            this.btnCheckEncashment.Text = "Cash Encashment";
             this.btnCheckEncashment.UseVisualStyleBackColor = false;
             this.btnCheckEncashment.Click += new System.EventHandler(this.btnCheckEncashment_Click_1);
             // 
@@ -270,7 +249,7 @@ namespace KioskQMS
             this.btnCheckout.Name = "btnCheckout";
             this.btnCheckout.Size = new System.Drawing.Size(274, 73);
             this.btnCheckout.TabIndex = 2;
-            this.btnCheckout.Text = "Checkout";
+            this.btnCheckout.Text = "New Account";
             this.btnCheckout.UseVisualStyleBackColor = false;
             this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click_1);
             // 
@@ -350,7 +329,6 @@ namespace KioskQMS
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private FontAwesome.Sharp.IconButton btnBack;
-        private FontAwesome.Sharp.IconButton btnTime;
         private FontAwesome.Sharp.IconButton btnLoan;
         private FontAwesome.Sharp.IconButton btnBill;
         private FontAwesome.Sharp.IconButton btnCheckEncashment;

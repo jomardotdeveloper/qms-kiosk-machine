@@ -32,6 +32,8 @@ namespace KioskQMS
             this.Transaction = transaction;
             this.Form = form;
             this.txtContactNumber.GotFocus += TextBox_GotFocus;
+            this.btnNext.BackColor = Color.Gray;
+            this.btnNext.Enabled = false;
         }
 
         private void TextBox_GotFocus(object sender, EventArgs e)
@@ -49,6 +51,17 @@ namespace KioskQMS
                     if (this._focusedControl.Text.Length != 13)
                     {
                         this._focusedControl.Text += number;
+                        if (this.txtContactNumber.Text.Length != 13)
+                        {
+                            this.btnNext.BackColor = Color.FromArgb(0, 184, 148);
+                            this.btnNext.Enabled = true;
+                        }
+                        else
+                        {
+                            this.btnNext.BackColor = Color.Gray;
+                            this.btnNext.Enabled = false;
+                        }
+
                     }
                 }
             }
@@ -69,16 +82,9 @@ namespace KioskQMS
 
         private void btnNext_Click_1(object sender, EventArgs e)
         {
-            if(this.txtContactNumber.Text.Length != 13)
-            {
-                MessageBox.Show("Your mobile number is invalid!");
-            }
-            else
-            {
-                this.Transaction.MobileNumber = "0" + this.txtContactNumber.Text.Replace("+63", "");
-                this.Transaction = TCreator.CreateTransaction(this.Transaction);
-                this.Form.OpenForm(new FormTicket(this.Form, this.Transaction));
-            }
+            this.Transaction.MobileNumber = "0" + this.txtContactNumber.Text.Replace("+63", "");
+            this.Transaction = TCreator.CreateTransaction(this.Transaction);
+            this.Form.OpenForm(new FormTicket(this.Form, this.Transaction));
         }
 
         private void btnClear_Click_1(object sender, EventArgs e)
@@ -86,6 +92,16 @@ namespace KioskQMS
             if (this._focusedControl != null)
             {
                 this._focusedControl.Text = "+63";
+                if (this.txtContactNumber.Text.Length != 13)
+                {
+                    this.btnNext.BackColor = Color.FromArgb(0, 184, 148);
+                    this.btnNext.Enabled = true;
+                }
+                else
+                {
+                    this.btnNext.BackColor = Color.Gray;
+                    this.btnNext.Enabled = false;
+                }
             }
         }
 
@@ -94,6 +110,16 @@ namespace KioskQMS
             if (this._focusedControl != null && !String.IsNullOrWhiteSpace(this._focusedControl.Text) && this._focusedControl.Text.Length > 3)
             {
                 this._focusedControl.Text = this._focusedControl.Text.Remove(this._focusedControl.Text.Length - 1);
+                if (this.txtContactNumber.Text.Length != 13)
+                {
+                    this.btnNext.BackColor = Color.FromArgb(0, 184, 148);
+                    this.btnNext.Enabled = true;
+                }
+                else
+                {
+                    this.btnNext.BackColor = Color.Gray;
+                    this.btnNext.Enabled = false;
+                }
             }
         }
 

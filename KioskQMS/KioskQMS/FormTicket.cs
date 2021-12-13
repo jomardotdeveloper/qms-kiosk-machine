@@ -29,7 +29,7 @@ namespace KioskQMS
         private JArray Arr;
         //WEB SOCKET
         private WebSocket WbClient;
-        const string host = "ws://74.63.204.84:8090";
+        private string host = Endpoints.WebsocketURL;
 
 
         public FormTicket(MainForm form, Transaction transaction)
@@ -65,7 +65,7 @@ namespace KioskQMS
             {
                 IDictionary<string, string> dict = new Dictionary<string, string>();
                 dict.Add("message", "newCustomer");
-                dict.Add("window_id", Transaction.WindowID.ToString());
+                dict.Add("branch_id", Transaction.BranchID.ToString());
 
                 string message = JsonConvert.SerializeObject(dict).ToString();
                 this.WbClient.Send(message);

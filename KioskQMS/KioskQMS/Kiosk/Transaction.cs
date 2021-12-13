@@ -36,6 +36,9 @@ namespace KioskQMS.Kiosk
 
         // MERON NA TO
         public bool IsPriority { set; get; }
+        public string Loan { set; get; }
+        public string Bill { set; get; }
+
 
         public DateTime MD { set; get; }
 

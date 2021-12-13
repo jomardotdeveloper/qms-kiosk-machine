@@ -253,3 +253,5 @@ C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\
 C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.csproj.CoreCompileInputs.cache
 C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.exe
 C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.pdb
+C:\Users\Administrator\Downloads\MY FINAL SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormBillsPayment.resources
+C:\Users\Administrator\Downloads\MY FINAL SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormLoans.resources

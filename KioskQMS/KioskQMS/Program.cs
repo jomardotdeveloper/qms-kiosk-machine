@@ -17,14 +17,7 @@ namespace KioskQMS
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            if (new FormKey().IsInstalled())
-            {
-                Application.Run(new MainForm());
-            }
-            else
-            {
-                Application.Run(new FormKey());
-            }
+            Application.Run(new MainForm());
         }
     }
 }

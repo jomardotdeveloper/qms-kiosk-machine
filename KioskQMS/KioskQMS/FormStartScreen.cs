@@ -25,11 +25,12 @@ namespace KioskQMS
         /* TO HANDLE THE SSL CERTIFICATE ISSUE WITH THE API, WILL REMOVE UPON DEPLOYING THE REST API */
         private HttpClientHandler Handler;
         private HttpClient Client;
+
         public FormStartScreen(MainForm form)
         {
             InitializeComponent();
             this.Transaction = new Transaction();
-            this.Transaction.BranchID = GetBranchID();
+            
             this.Form = form;
             Global.Reset();
             this.Handler = new HttpClientHandler()
@@ -39,39 +40,28 @@ namespace KioskQMS
 
             this.Client = new HttpClient(this.Handler);
             this.Client.BaseAddress = new Uri(Endpoints.BaseUrl);
+            this.Transaction.BranchID = GetBranchID();
+
+            if(this.Transaction.BranchID == 0)
+            {
+                this.btnStart.ButtonText = "Server is down!";
+                this.btnStart.BackgroundColor = Color.Gray;
+                this.btnStart.Enabled = false;
+            }
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            IsCutOff();
+            //IsCutOff();
             
             
         }
 
         private int GetBranchID()
         {
-            var projectPath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-            string FilePath = Path.Combine(projectPath, "Resources");
-
-            String line;
-            try
-            {
-                //Pass the file path and file name to the StreamReader constructor
-                StreamReader sr = new StreamReader(FilePath + @"\config.txt");
-                //Read the first line of text
-                line = sr.ReadLine();
-
-                string[] branch_id = line.Split('=');
-
-                return Convert.ToInt32(branch_id[1]);
-                //close the file
-                sr.Close();
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show("Exception: " + e.Message);
-            }
-            return 0;
+            var response = this.Client.GetAsync(Endpoints.BranchIDUrl).Result;
+            JObject json = JObject.Parse(response.Content.ReadAsStringAsync().Result);
+            return Convert.ToInt32(json["branch_id"]);
         }
 
         private bool IsCutOff()
@@ -208,15 +198,7 @@ namespace KioskQMS
 
         private void btnStart_Click_1(object sender, EventArgs e)
         {
-            if (IsCutOff())
-            {
-                MessageBox.Show("Operation failed: The system is not accepting new token. ");
-            }
-            else
-            {
-                this.Form.OpenForm(new FormAccountNo(this.Transaction, this.Form));
-            }
-
+            this.Form.OpenForm(new FormServices(this.Transaction, this.Form));
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

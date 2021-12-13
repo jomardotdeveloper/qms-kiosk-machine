@@ -25,11 +25,14 @@ namespace KioskQMS.Kiosk
             Client.BaseAddress = new Uri(Endpoints.BaseUrl);
 
             IDictionary<string, string> data = new Dictionary<string, string>();
-            data.Add("account_number", transaction.AccountNumber);
-            data.Add("window_id", transaction.WindowID.ToString());
-            data.Add("profile_id", transaction.ProfileID.ToString());
+            
             data.Add("branch_id", transaction.BranchID.ToString());
             data.Add("service_id", transaction.ServiceID.ToString());
+
+            if(transaction.AccountNumber != null)
+            {
+                data.Add("account_number", transaction.AccountNumber);
+            }
 
             if(transaction.MobileNumber != null)
             {
@@ -42,6 +45,15 @@ namespace KioskQMS.Kiosk
                 data.Add("amount", transaction.MobileNumber);
             }
 
+            if(transaction.Loan != null)
+            {
+                data.Add("loan_id", transaction.Loan);
+            }
+
+            if(transaction.Bill != null)
+            {
+                data.Add("bill_id", transaction.Bill);
+            }
 
             var response = Client.PostAsJsonAsync(Endpoints.TransactionUrl, data).Result;
             JObject json = JObject.Parse(response.Content.ReadAsStringAsync().Result);

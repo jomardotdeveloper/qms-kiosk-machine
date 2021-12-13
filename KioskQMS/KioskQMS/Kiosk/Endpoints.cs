@@ -8,7 +8,9 @@ namespace KioskQMS.Kiosk
 {
     static class Endpoints
     {
-        public static string BaseUrl = "http://poracbankqms.com/api/";
+        //74.63.204.84
+        public static string WebsocketURL = "ws://127.0.0.1:8090";
+        public static string BaseUrl = "http://127.0.0.1:8000/api/";
 
         //REQUIRED PARAMETER (PRODUCT KEY) GET
         public static string BranchUrl = "branches/get_branch_data/";
@@ -25,5 +27,8 @@ namespace KioskQMS.Kiosk
 
         //REQUIRED PARAMETER (BRANCH ID) GET
         public static string CutoffUrl = "cutoffs/get_cutoff_data/";
+
+        // GET BRANCH ID
+        public static string BranchIDUrl = "server/get_branch_id/";
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KioskQMS.Kiosk;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,13 @@ namespace KioskQMS
 {
     public partial class FormLoans : Form
     {
-        public FormLoans()
+        private Transaction Transaction;
+        private MainForm Form;
+        public FormLoans(Transaction transaction, MainForm form)
         {
             InitializeComponent();
+            this.Transaction = transaction;
+            this.Form = form;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -29,7 +34,8 @@ namespace KioskQMS
 
         private void btnBill_Click(object sender, EventArgs e)
         {
-
+            this.Transaction.Loan = "5";
+            this.Form.OpenForm(new FormAccountNo(this.Transaction, this.Form, "LOAN"));
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -39,12 +45,14 @@ namespace KioskQMS
 
         private void btnCheckout_Click(object sender, EventArgs e)
         {
-
+            this.Transaction.Loan = "3";
+            this.Form.OpenForm(new FormAccountNo(this.Transaction, this.Form, "LOAN"));
         }
 
         private void btnCheckEncashment_Click(object sender, EventArgs e)
         {
-
+            this.Transaction.Loan = "4";
+            this.Form.OpenForm(new FormAccountNo(this.Transaction, this.Form, "LOAN"));
         }
 
         private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
@@ -64,7 +72,8 @@ namespace KioskQMS
 
         private void btnWithdraw_Click(object sender, EventArgs e)
         {
-
+            this.Transaction.Loan = "2";
+            this.Form.OpenForm(new FormAccountNo(this.Transaction, this.Form, "LOAN"));
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -79,7 +88,8 @@ namespace KioskQMS
 
         private void btnDeposit_Click(object sender, EventArgs e)
         {
-
+            this.Transaction.Loan = "1";
+            this.Form.OpenForm(new FormAccountNo(this.Transaction, this.Form, "LOAN"));
         }
 
         private void btnBack_Click(object sender, EventArgs e)

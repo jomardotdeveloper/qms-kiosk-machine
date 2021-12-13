@@ -24,6 +24,8 @@ namespace KioskQMS
             this.txtAmount.GotFocus += TextBox_GotFocus;
             this.Form = form;
             Load += new EventHandler(ProgramViwer_Load);
+            this.btnNext.BackColor = Color.Gray;
+            this.btnNext.Enabled = false;
         }
         private void ProgramViwer_Load(object sender, System.EventArgs e)
         {
@@ -85,6 +87,16 @@ namespace KioskQMS
             if (this._focusedControl != null)
             {
                 this._focusedControl.Text = "";
+                if (!String.IsNullOrWhiteSpace(this.txtAmount.Text) && Convert.ToInt32(this.txtAmount.Text) > 50)
+                {
+                    this.btnNext.BackColor = Color.FromArgb(0, 184, 148);
+                    this.btnNext.Enabled = true;
+                }
+                else
+                {
+                    this.btnNext.BackColor = Color.Gray;
+                    this.btnNext.Enabled = false;
+                }
             }
         }
 
@@ -93,6 +105,16 @@ namespace KioskQMS
             if (this._focusedControl != null && !String.IsNullOrWhiteSpace(this._focusedControl.Text))
             {
                 this._focusedControl.Text = this._focusedControl.Text.Remove(this._focusedControl.Text.Length - 1);
+                if (!String.IsNullOrWhiteSpace(this.txtAmount.Text) && Convert.ToInt32(this.txtAmount.Text) > 50)
+                {
+                    this.btnNext.BackColor = Color.FromArgb(0, 184, 148);
+                    this.btnNext.Enabled = true;
+                }
+                else
+                {
+                    this.btnNext.BackColor = Color.Gray;
+                    this.btnNext.Enabled = false;
+                }
             }
         }
 
@@ -105,6 +127,16 @@ namespace KioskQMS
                 if (this._focusedControl.Text.Length <= 11)
                 {
                     this._focusedControl.Text += number;
+                    if(!String.IsNullOrWhiteSpace(this.txtAmount.Text) && Convert.ToInt32(this.txtAmount.Text) > 50)
+                    {
+                        this.btnNext.BackColor = Color.FromArgb(0, 184, 148);
+                        this.btnNext.Enabled = true;
+                    }
+                    else
+                    {
+                        this.btnNext.BackColor = Color.Gray;
+                        this.btnNext.Enabled = false;
+                    }
                 }
             }
         }
@@ -130,7 +162,9 @@ namespace KioskQMS
 
         private void btnNext_Click_2(object sender, EventArgs e)
         {
-            Validation();
+            //Validation();
+            this.Transaction.Amount = this.txtAmount.Text;
+            this.Form.OpenForm(new FormAccountNo(this.Transaction, this.Form, "DEPOSIT"));
         }
 
         private void btnBack_Click_2(object sender, EventArgs e)

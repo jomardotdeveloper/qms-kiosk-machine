@@ -53,81 +53,67 @@ namespace KioskQMS
 
         private void btnCheckout_Click_1(object sender, EventArgs e)
         {
-            this.Transaction.ServiceID = 3;
+            this.Transaction.ServiceID = 6;
             LoadWindow();
         }
 
         private void btnCheckEncashment_Click_1(object sender, EventArgs e)
         {
-            this.Transaction.ServiceID = 4;
+            this.Transaction.ServiceID = 3;
             LoadWindow();
         }
 
         private void btnBill_Click_1(object sender, EventArgs e)
         {
-            this.Transaction.ServiceID = 5;
+            this.Transaction.ServiceID = 4;
             LoadWindow();
         }
 
         private void btnLoan_Click_1(object sender, EventArgs e)
         {
-            this.Transaction.ServiceID = 6;
-            LoadWindow();
-        }
-
-        private void btnTime_Click_1(object sender, EventArgs e)
-        {
-            this.Transaction.ServiceID = 7;
+            this.Transaction.ServiceID = 5;
             LoadWindow();
         }
 
         private void btnBack_Click_1(object sender, EventArgs e)
         {
-            this.Form.OpenForm(new FormAccountNo(this.Transaction, this.Form));
+            this.Form.OpenForm(new FormStartScreen(this.Form));
         }
 
         private void LoadWindow()
         {
-            this.Handler = new HttpClientHandler()
+            if (this.Transaction.ServiceID == 1)
             {
-                ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
-            };
-
-            this.Client = new HttpClient(this.Handler);
-            this.Client.BaseAddress = new Uri(Endpoints.BaseUrl);
-
-            try
-            {
-                string isPrio = this.Transaction.IsPriority ? "1" : "0";
-                string param = this.Transaction.BranchID.ToString() + "/" + this.Transaction.ServiceID + "/" + isPrio;
-                var response = this.Client.GetAsync(Endpoints.WindowUrl + param).Result;
-                JObject json = JObject.Parse(response.Content.ReadAsStringAsync().Result);
-
-                if(json["status"].ToString() == "1")
-                {
-                    this.Transaction.WindowID = Convert.ToInt32(json["window_id"]);
-                    this.Transaction.ProfileID = Convert.ToInt32(json["profile_id"]);
-
-                    if(this.Transaction.ServiceID == 1)
-                    {
-                        this.Form.OpenForm(new FormDeposit(this.Transaction, this.Form));
-                    }
-                    else
-                    {
-                        this.Transaction.Amount = null;
-                        this.Form.OpenForm(new FormSMS(this.Transaction, this.Form));
-                    }
-                    
-                }
-                else
-                {
-                    MessageBox.Show(json["message"].ToString());
-                }
+                this.Transaction.Loan = null;
+                this.Transaction.Bill = null;
+                this.Form.OpenForm(new FormDeposit(this.Transaction, this.Form));
             }
-            catch (Exception e)
+            else if(this.Transaction.ServiceID == 4)
             {
-                MessageBox.Show("There is a problem with the server.");
+                this.Transaction.Amount = null;
+                this.Transaction.Loan = null;
+                this.Form.OpenForm(new FormBillsPayment(this.Transaction, this.Form));
+            }else if(this.Transaction.ServiceID == 5)
+            {
+                this.Transaction.Amount = null;
+                this.Transaction.Bill = null;
+                this.Form.OpenForm(new FormLoans(this.Transaction, this.Form));
+            }else if(this.Transaction.ServiceID == 6)
+            {
+                this.Transaction.Amount = null;
+                this.Transaction.Loan = null;
+                this.Transaction.Bill = null;
+                this.Transaction.AccountNumber = null;
+                this.Form.OpenForm(new FormSMS(this.Transaction, this.Form));
             }
+            else
+            {
+                this.Transaction.Amount = null;
+                this.Transaction.Loan = null;
+                this.Transaction.Bill = null;
+                this.Form.OpenForm(new FormAccountNo(this.Transaction, this.Form, "SERVICES"));
+            }
+
         }
     }
 }

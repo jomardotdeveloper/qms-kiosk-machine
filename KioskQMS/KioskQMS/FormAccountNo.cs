@@ -24,9 +24,9 @@ namespace KioskQMS
         /* TO HANDLE THE SSL CERTIFICATE ISSUE WITH THE API, WILL REMOVE UPON DEPLOYING THE REST API */
         private HttpClientHandler Handler;
         private HttpClient Client;
+        private String PrevForm;
 
-
-        public FormAccountNo(Transaction transaction, MainForm form)
+        public FormAccountNo(Transaction transaction, MainForm form, String prevForm)
         {
             InitializeComponent();
             this.Transaction = transaction;
@@ -35,11 +35,30 @@ namespace KioskQMS
             this.txtAccountNumber.Focus();
             //this.ActiveControl = 
             Load += new EventHandler(ProgramViwer_Load);
-
+            this.btnNext.BackColor = Color.Gray;
+            this.btnNext.Enabled = false;
+            this.PrevForm = prevForm;
         }
         private void btnBack_Click_1(object sender, EventArgs e)
         {
-            this.Form.OpenForm(new FormStartScreen(this.Form));
+            //this.Transaction
+
+            if(this.PrevForm == "SERVICES") 
+            {
+                this.Form.OpenForm(new FormServices(this.Transaction, this.Form));
+            }
+            else if(this.PrevForm == "DEPOSIT")
+            {
+                this.Form.OpenForm(new FormDeposit(this.Transaction, this.Form));
+            }
+            else if (this.PrevForm == "BILL")
+            {
+                this.Form.OpenForm(new FormBillsPayment(this.Transaction, this.Form));
+            }else if (this.PrevForm == "LOAN")
+            {
+                this.Form.OpenForm(new FormLoans(this.Transaction, this.Form));
+            }
+            
         }
 
         private void ProgramViwer_Load(object sender, System.EventArgs e)
@@ -51,7 +70,7 @@ namespace KioskQMS
 
         private void btnNext_Click_1(object sender, EventArgs e)
         {
-            Validation();
+            this.Form.OpenForm(new FormSMS(this.Transaction, this.Form));
         }
 
         private void btnClear_Click_1(object sender, EventArgs e)
@@ -59,6 +78,17 @@ namespace KioskQMS
             if (this._focusedControl != null)
             {
                 this._focusedControl.Text = "";
+
+                if (!String.IsNullOrWhiteSpace(this.txtAccountNumber.Text) && this.AccountNumberExists())
+                {
+                    this.btnNext.BackColor = Color.FromArgb(0, 184, 148);
+                    this.btnNext.Enabled = true;
+                }
+                else
+                {
+                    this.btnNext.BackColor = Color.Gray;
+                    this.btnNext.Enabled = false;
+                }
             }
         }
 
@@ -67,6 +97,17 @@ namespace KioskQMS
             if (this._focusedControl != null && !String.IsNullOrWhiteSpace(this._focusedControl.Text))
             {
                 this._focusedControl.Text = this._focusedControl.Text.Remove(this._focusedControl.Text.Length - 1);
+
+                if (!String.IsNullOrWhiteSpace(this.txtAccountNumber.Text) && this.AccountNumberExists())
+                {
+                    this.btnNext.BackColor = Color.FromArgb(0, 184, 148);
+                    this.btnNext.Enabled = true;
+                }
+                else
+                {
+                    this.btnNext.BackColor = Color.Gray;
+                    this.btnNext.Enabled = false;
+                }
             }
         }
 
@@ -143,35 +184,50 @@ namespace KioskQMS
                         else
                             this._focusedControl.Text += number;
                     }
+
+                    if(!String.IsNullOrWhiteSpace(this.txtAccountNumber.Text) && this.AccountNumberExists())
+                    {
+                        this.btnNext.BackColor = Color.FromArgb(0, 184, 148);
+                        this.btnNext.Enabled = true;
+                    }
+                    else
+                    {
+                        this.btnNext.BackColor = Color.Gray;
+                        this.btnNext.Enabled = false;
+                    }
                 }
             }
         }
         private void Validation()
         {
-            if (String.IsNullOrWhiteSpace(this.txtAccountNumber.Text))
-            {
-                MessageBox.Show("Fill out all the required fields!");
-            }
-            else
-            {
-                if (!AccountNumberFormatIsValid())
-                {
-                    MessageBox.Show("Wrong format of account number!");
-                    this.txtAccountNumber.Text = "";
-                }
-                else
-                {
-                    if (this.AccountNumberExists())
-                    {
-                        this.Form.OpenForm(new FormServices(this.Transaction, this.Form));
-                    }
-                    else
-                    {
-                        MessageBox.Show("Account number doesn't exists.");
-                    }
+            //
 
-                }
-            }
+            //return/* !String.IsNullOrWhiteSpace(this.txtAccountNumber.Text) && this.AccountNumberExists()*/;
+
+            //if (String.IsNullOrWhiteSpace(this.txtAccountNumber.Text))
+            //{
+            //    MessageBox.Show("Fill out all the required fields!");
+            //}
+            //else
+            //{
+            //    if (!AccountNumberFormatIsValid())
+            //    {
+            //        MessageBox.Show("Wrong format of account number!");
+            //        this.txtAccountNumber.Text = "";
+            //    }
+            //    else
+            //    {
+            //        if (this.AccountNumberExists())
+            //        {
+            //            this.Form.OpenForm(new FormServices(this.Transaction, this.Form));
+            //        }
+            //        else
+            //        {
+            //            MessageBox.Show("Account number doesn't exists.");
+            //        }
+
+            //    }
+            //}
         }
 
         private bool AccountNumberExists()

@@ -62,7 +62,7 @@ namespace KioskQMS
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1904, 284);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1370, 284);
             this.tableLayoutPanel1.TabIndex = 1;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -74,7 +74,7 @@ namespace KioskQMS
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
             this.label2.Location = new System.Drawing.Point(3, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1898, 144);
+            this.label2.Size = new System.Drawing.Size(1364, 144);
             this.label2.TabIndex = 2;
             this.label2.Text = "LOAN TRANSACTION";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -86,7 +86,7 @@ namespace KioskQMS
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1904, 284);
+            this.panel1.Size = new System.Drawing.Size(1370, 284);
             this.panel1.TabIndex = 8;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -95,16 +95,16 @@ namespace KioskQMS
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 284);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1904, 57);
+            this.panel5.Size = new System.Drawing.Size(1370, 57);
             this.panel5.TabIndex = 12;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // panel2
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1630, 341);
+            this.panel2.Location = new System.Drawing.Point(1096, 341);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(274, 704);
+            this.panel2.Size = new System.Drawing.Size(274, 408);
             this.panel2.TabIndex = 9;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -113,16 +113,16 @@ namespace KioskQMS
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 341);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(274, 704);
+            this.panel3.Size = new System.Drawing.Size(274, 408);
             this.panel3.TabIndex = 11;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // panel4
             // 
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(274, 744);
+            this.panel4.Location = new System.Drawing.Point(274, 448);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1356, 301);
+            this.panel4.Size = new System.Drawing.Size(822, 301);
             this.panel4.TabIndex = 10;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
@@ -145,7 +145,7 @@ namespace KioskQMS
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1356, 403);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(822, 107);
             this.tableLayoutPanel2.TabIndex = 13;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
@@ -160,9 +160,9 @@ namespace KioskQMS
             this.btnLoan.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnLoan.IconColor = System.Drawing.Color.Black;
             this.btnLoan.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLoan.Location = new System.Drawing.Point(907, 204);
+            this.btnLoan.Location = new System.Drawing.Point(551, 56);
             this.btnLoan.Name = "btnLoan";
-            this.btnLoan.Size = new System.Drawing.Size(446, 196);
+            this.btnLoan.Size = new System.Drawing.Size(268, 48);
             this.btnLoan.TabIndex = 5;
             this.btnLoan.Text = "Back";
             this.btnLoan.UseVisualStyleBackColor = false;
@@ -179,9 +179,9 @@ namespace KioskQMS
             this.btnBill.IconChar = FontAwesome.Sharp.IconChar.HandHoldingUsd;
             this.btnBill.IconColor = System.Drawing.Color.White;
             this.btnBill.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBill.Location = new System.Drawing.Point(455, 204);
+            this.btnBill.Location = new System.Drawing.Point(277, 56);
             this.btnBill.Name = "btnBill";
-            this.btnBill.Size = new System.Drawing.Size(446, 196);
+            this.btnBill.Size = new System.Drawing.Size(268, 48);
             this.btnBill.TabIndex = 4;
             this.btnBill.Text = "SSS Pensioner";
             this.btnBill.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -200,9 +200,9 @@ namespace KioskQMS
             this.btnCheckEncashment.IconChar = FontAwesome.Sharp.IconChar.MoneyBill;
             this.btnCheckEncashment.IconColor = System.Drawing.Color.White;
             this.btnCheckEncashment.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCheckEncashment.Location = new System.Drawing.Point(3, 204);
+            this.btnCheckEncashment.Location = new System.Drawing.Point(3, 56);
             this.btnCheckEncashment.Name = "btnCheckEncashment";
-            this.btnCheckEncashment.Size = new System.Drawing.Size(446, 196);
+            this.btnCheckEncashment.Size = new System.Drawing.Size(268, 48);
             this.btnCheckEncashment.TabIndex = 3;
             this.btnCheckEncashment.Text = "Easy Cash";
             this.btnCheckEncashment.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -221,9 +221,9 @@ namespace KioskQMS
             this.btnCheckout.IconChar = FontAwesome.Sharp.IconChar.HouseUser;
             this.btnCheckout.IconColor = System.Drawing.Color.White;
             this.btnCheckout.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCheckout.Location = new System.Drawing.Point(907, 3);
+            this.btnCheckout.Location = new System.Drawing.Point(551, 3);
             this.btnCheckout.Name = "btnCheckout";
-            this.btnCheckout.Size = new System.Drawing.Size(446, 195);
+            this.btnCheckout.Size = new System.Drawing.Size(268, 47);
             this.btnCheckout.TabIndex = 2;
             this.btnCheckout.Text = "Housing Loan";
             this.btnCheckout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -242,9 +242,9 @@ namespace KioskQMS
             this.btnWithdraw.IconChar = FontAwesome.Sharp.IconChar.Building;
             this.btnWithdraw.IconColor = System.Drawing.Color.White;
             this.btnWithdraw.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnWithdraw.Location = new System.Drawing.Point(455, 3);
+            this.btnWithdraw.Location = new System.Drawing.Point(277, 3);
             this.btnWithdraw.Name = "btnWithdraw";
-            this.btnWithdraw.Size = new System.Drawing.Size(446, 195);
+            this.btnWithdraw.Size = new System.Drawing.Size(268, 47);
             this.btnWithdraw.TabIndex = 1;
             this.btnWithdraw.Text = "Commercial Loan";
             this.btnWithdraw.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -265,7 +265,7 @@ namespace KioskQMS
             this.btnDeposit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDeposit.Location = new System.Drawing.Point(3, 3);
             this.btnDeposit.Name = "btnDeposit";
-            this.btnDeposit.Size = new System.Drawing.Size(446, 195);
+            this.btnDeposit.Size = new System.Drawing.Size(268, 47);
             this.btnDeposit.TabIndex = 0;
             this.btnDeposit.Text = "Agricultural Loan";
             this.btnDeposit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -278,7 +278,7 @@ namespace KioskQMS
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1904, 1045);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
