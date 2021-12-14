@@ -118,18 +118,18 @@ namespace KioskQMS
 
         private void btn1_Click_1(object sender, EventArgs e)
         {
-            EnterNumber("1");
+            EnterNumber("7");
 
         }
 
         private void btn2_Click_1(object sender, EventArgs e)
         {
-            EnterNumber("2");
+            EnterNumber("8");
         }
 
         private void btn3_Click_1(object sender, EventArgs e)
         {
-            EnterNumber("3");
+            EnterNumber("9");
         }
 
         private void btn4_Click_1(object sender, EventArgs e)
@@ -149,17 +149,17 @@ namespace KioskQMS
 
         private void btn7_Click_1(object sender, EventArgs e)
         {
-            EnterNumber("7");
+            EnterNumber("1");
         }
 
         private void btn8_Click_1(object sender, EventArgs e)
         {
-            EnterNumber("8");
+            EnterNumber("2");
         }
 
         private void btn9_Click_1(object sender, EventArgs e)
         {
-            EnterNumber("9");
+            EnterNumber("3");
         }
 
         private void txtAccountNumber_TextChanged(object sender, EventArgs e)

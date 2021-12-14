@@ -255,3 +255,5 @@ C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\
 C:\Users\Alfa Shekynah\Downloads\OUT SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.pdb
 C:\Users\Administrator\Downloads\MY FINAL SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormBillsPayment.resources
 C:\Users\Administrator\Downloads\MY FINAL SYSTEM\qms-kiosk-machine\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormLoans.resources
+S:\1Project\qms-kiosk-machine-versionupdate\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormBillsPayment.resources
+S:\1Project\qms-kiosk-machine-versionupdate\KioskQMS\KioskQMS\obj\Debug\KioskQMS.FormLoans.resources

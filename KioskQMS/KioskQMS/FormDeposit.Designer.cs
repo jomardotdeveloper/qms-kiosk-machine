@@ -166,7 +166,7 @@ namespace KioskQMS
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(102, 54);
             this.btn3.TabIndex = 8;
-            this.btn3.Text = "3";
+            this.btn3.Text = "9";
             this.btn3.UseVisualStyleBackColor = false;
             this.btn3.Click += new System.EventHandler(this.btn3_Click_1);
             // 
@@ -185,7 +185,7 @@ namespace KioskQMS
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(102, 54);
             this.btn2.TabIndex = 7;
-            this.btn2.Text = "2";
+            this.btn2.Text = "8";
             this.btn2.UseVisualStyleBackColor = false;
             this.btn2.Click += new System.EventHandler(this.btn2_Click_1);
             // 
@@ -204,7 +204,7 @@ namespace KioskQMS
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(102, 54);
             this.btn1.TabIndex = 6;
-            this.btn1.Text = "1";
+            this.btn1.Text = "7";
             this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click_1);
             // 
@@ -280,7 +280,7 @@ namespace KioskQMS
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(102, 54);
             this.btn9.TabIndex = 2;
-            this.btn9.Text = "9";
+            this.btn9.Text = "3";
             this.btn9.UseVisualStyleBackColor = false;
             this.btn9.Click += new System.EventHandler(this.btn9_Click_1);
             // 
@@ -299,7 +299,7 @@ namespace KioskQMS
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(102, 54);
             this.btn8.TabIndex = 1;
-            this.btn8.Text = "8";
+            this.btn8.Text = "2";
             this.btn8.UseVisualStyleBackColor = false;
             this.btn8.Click += new System.EventHandler(this.btn8_Click_1);
             // 
@@ -318,7 +318,7 @@ namespace KioskQMS
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(102, 54);
             this.btn7.TabIndex = 0;
-            this.btn7.Text = "7";
+            this.btn7.Text = "1";
             this.btn7.UseVisualStyleBackColor = false;
             this.btn7.Click += new System.EventHandler(this.btn7_Click_1);
             // 
