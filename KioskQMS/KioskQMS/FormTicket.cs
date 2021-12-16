@@ -54,7 +54,7 @@ namespace KioskQMS
 
         private void LoadToken()
         {
-
+            this.lblId.Visible = false;
             this.lblToken.Text = this.Transaction.Token;
             this.lblService.Text = GetServiceName(this.Transaction.ServiceID);
             this.lblId.Text = "Ref. no: " + this.Transaction.ID.ToString();
@@ -95,22 +95,18 @@ namespace KioskQMS
                     break;
                 case 3:
                     // code block
-                    name = "Checkout";
+                    name = "Cash Encashment";
                     break;
                 case 4:
                     // code block
-                    name = "Cash Encashment";
+                    name = "Bills Payment";
                     break;
                 case 5:
-                    name = "Bills Payment";
+                    name = "Loan Transaction";
                     // code block
                     break;
                 case 6:
-                    name = "Loan Transaction / Application / Inquiry";
-                    // code block
-                    break;
-                case 7:
-                    name = "Time Deposit Transaction";
+                    name = "New Account";
                     // code block
                     break;
             }

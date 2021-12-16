@@ -11,7 +11,7 @@ namespace KioskQMS.Kiosk
         public static bool IsFlag = true;
         public static bool IsDone = false;
         public static bool IsSuccess = false;
-
+        public static String BranchName = "";
 
         public static void Reset()
         {

@@ -61,6 +61,7 @@ namespace KioskQMS
         {
             var response = this.Client.GetAsync(Endpoints.BranchIDUrl).Result;
             JObject json = JObject.Parse(response.Content.ReadAsStringAsync().Result);
+            Global.BranchName = json["branch_name"].ToString();
             return Convert.ToInt32(json["branch_id"]);
         }
 

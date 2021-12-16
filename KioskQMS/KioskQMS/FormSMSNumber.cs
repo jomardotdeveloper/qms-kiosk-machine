@@ -51,15 +51,16 @@ namespace KioskQMS
                     if (this._focusedControl.Text.Length != 13)
                     {
                         this._focusedControl.Text += number;
-                        if (this.txtContactNumber.Text.Length != 13)
-                        {
-                            this.btnNext.BackColor = Color.FromArgb(0, 184, 148);
-                            this.btnNext.Enabled = true;
-                        }
-                        else
+                        if (this.txtContactNumber.Text.Length < 13)
                         {
                             this.btnNext.BackColor = Color.Gray;
                             this.btnNext.Enabled = false;
+                        }
+                        else
+                        {
+                            
+                            this.btnNext.BackColor = Color.FromArgb(0, 184, 148);
+                            this.btnNext.Enabled = true;
                         }
 
                     }
@@ -92,15 +93,16 @@ namespace KioskQMS
             if (this._focusedControl != null)
             {
                 this._focusedControl.Text = "+63";
-                if (this.txtContactNumber.Text.Length != 13)
-                {
-                    this.btnNext.BackColor = Color.FromArgb(0, 184, 148);
-                    this.btnNext.Enabled = true;
-                }
-                else
+                if (this.txtContactNumber.Text.Length < 13)
                 {
                     this.btnNext.BackColor = Color.Gray;
                     this.btnNext.Enabled = false;
+                }
+                else
+                {
+                    
+                    this.btnNext.BackColor = Color.FromArgb(0, 184, 148);
+                    this.btnNext.Enabled = true;
                 }
             }
         }
@@ -110,15 +112,15 @@ namespace KioskQMS
             if (this._focusedControl != null && !String.IsNullOrWhiteSpace(this._focusedControl.Text) && this._focusedControl.Text.Length > 3)
             {
                 this._focusedControl.Text = this._focusedControl.Text.Remove(this._focusedControl.Text.Length - 1);
-                if (this.txtContactNumber.Text.Length != 13)
+                if (this.txtContactNumber.Text.Length < 13)
                 {
-                    this.btnNext.BackColor = Color.FromArgb(0, 184, 148);
-                    this.btnNext.Enabled = true;
+                    this.btnNext.BackColor = Color.Gray ;
+                    this.btnNext.Enabled = false;
                 }
                 else
                 {
-                    this.btnNext.BackColor = Color.Gray;
-                    this.btnNext.Enabled = false;
+                    this.btnNext.BackColor = Color.FromArgb(0, 184, 148);
+                    this.btnNext.Enabled = true;
                 }
             }
         }
