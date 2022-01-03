@@ -67,7 +67,7 @@ namespace KioskQMS
 
         private void btnLoan_Click(object sender, EventArgs e)
         {
-
+            this.Form.OpenForm(new FormServices(this.Transaction, this.Form));
         }
 
         private void btnWithdraw_Click(object sender, EventArgs e)

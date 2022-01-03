@@ -378,6 +378,7 @@ namespace KioskQMS
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormBillsPayment";
             this.Text = "FormBillsPayment";
             this.tableLayoutPanel2.ResumeLayout(false);
