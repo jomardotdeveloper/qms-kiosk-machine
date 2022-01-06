@@ -42,7 +42,7 @@ namespace KioskQMS.Kiosk
 
             if (transaction.Amount != null)
             {
-                data.Add("amount", transaction.MobileNumber);
+                data.Add("amount", transaction.Amount);
             }
 
             if(transaction.Loan != null)

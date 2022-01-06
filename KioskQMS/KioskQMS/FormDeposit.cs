@@ -87,7 +87,7 @@ namespace KioskQMS
             if (this._focusedControl != null)
             {
                 this._focusedControl.Text = "";
-                if (!String.IsNullOrWhiteSpace(this.txtAmount.Text) && Convert.ToInt32(this.txtAmount.Text) > 50)
+                if (!String.IsNullOrWhiteSpace(this.txtAmount.Text) && Convert.ToInt64(this.txtAmount.Text) >= 50)
                 {
                     this.btnNext.BackColor = Color.FromArgb(0, 184, 148);
                     this.btnNext.Enabled = true;
@@ -105,7 +105,7 @@ namespace KioskQMS
             if (this._focusedControl != null && !String.IsNullOrWhiteSpace(this._focusedControl.Text))
             {
                 this._focusedControl.Text = this._focusedControl.Text.Remove(this._focusedControl.Text.Length - 1);
-                if (!String.IsNullOrWhiteSpace(this.txtAmount.Text) && Convert.ToInt32(this.txtAmount.Text) > 50)
+                if (!String.IsNullOrWhiteSpace(this.txtAmount.Text) && Convert.ToInt64(this.txtAmount.Text) >= 50)
                 {
                     this.btnNext.BackColor = Color.FromArgb(0, 184, 148);
                     this.btnNext.Enabled = true;
@@ -124,10 +124,10 @@ namespace KioskQMS
         {
             if (this._focusedControl != null)
             {
-                if (this._focusedControl.Text.Length <= 11)
+                if (this._focusedControl.Text.Length < 9)
                 {
                     this._focusedControl.Text += number;
-                    if(!String.IsNullOrWhiteSpace(this.txtAmount.Text) && Convert.ToInt32(this.txtAmount.Text) > 50)
+                    if (!String.IsNullOrWhiteSpace(this.txtAmount.Text) && Convert.ToInt64(this.txtAmount.Text) >= 50)
                     {
                         this.btnNext.BackColor = Color.FromArgb(0, 184, 148);
                         this.btnNext.Enabled = true;

@@ -88,6 +88,7 @@ namespace KioskQMS.Kiosk
         private void FormatPage(object sender, PrintPageEventArgs e)
         {
             graphics = e.Graphics;
+            Font branchFont = new Font("Arial", 12);
             Font titleFont = new Font("Arial", 18);
             Font tokenFont = new Font("Arial", 30);
             Font serviceFont = new Font("Arial", 10);
@@ -95,7 +96,7 @@ namespace KioskQMS.Kiosk
             Font dateFont = new Font("Arial", 12);
 
             int Offset = 10;
-            DrawLine(Global.BranchName, titleFont, Offset, 0);
+            DrawLine(getBranch(), branchFont, Offset, 0);
             Offset += 40;
             DrawLine("Ticket Number", titleFont, Offset, 0);
             Offset += 40;
@@ -113,6 +114,21 @@ namespace KioskQMS.Kiosk
             Offset += 40;
             DrawLine("                  .                   ", refNumberFont, Offset, 0);
 
+        }
+
+        private string getBranch()
+        {
+            string branch = "";
+            // 17 char
+            int numberOfSpace = 17 - Global.BranchName.Length;
+
+            for(int i = 0; i < numberOfSpace; i++)
+            {
+                branch += " ";
+            }
+
+            branch += Global.BranchName;
+            return branch;
         }
 
         private string GetToken()

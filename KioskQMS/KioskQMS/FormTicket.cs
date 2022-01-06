@@ -71,8 +71,8 @@ namespace KioskQMS
                 this.WbClient.Send(message);
             }
 
-            TokenPrinter Printer = new TokenPrinter(this.lblToken.Text, this.lblService.Text, this.lblNumber.Text, this.ID, this.lblDate.Text);
-            Printer.Print();
+            //TokenPrinter Printer = new TokenPrinter(this.lblToken.Text, this.lblService.Text, this.lblNumber.Text, this.ID, this.lblDate.Text);
+            //Printer.Print();
         }
 
         private void Exit()
