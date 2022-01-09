@@ -49,10 +49,9 @@ namespace KioskQMS
             this.panel1.BackgroundImage = global::KioskQMS.Properties.Resources.shadow;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Controls.Add(this.tableLayoutPanel1);
-            this.panel1.Location = new System.Drawing.Point(891, 228);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(668, 185);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(712, 748);
+            this.panel1.Size = new System.Drawing.Size(534, 608);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -69,29 +68,27 @@ namespace KioskQMS
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 9;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 23F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.6183F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.78938F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.86194F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.92495F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.8215F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.879263F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(712, 748);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 76F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(534, 608);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = global::KioskQMS.Properties.Resources.orif;
-            this.pictureBox2.Location = new System.Drawing.Point(4, 639);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 519);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(704, 86);
+            this.pictureBox2.Size = new System.Drawing.Size(528, 70);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
@@ -101,10 +98,9 @@ namespace KioskQMS
             this.lblDate.AutoSize = true;
             this.lblDate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblDate.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Location = new System.Drawing.Point(4, 581);
-            this.lblDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDate.Location = new System.Drawing.Point(3, 472);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(704, 54);
+            this.lblDate.Size = new System.Drawing.Size(528, 44);
             this.lblDate.TabIndex = 6;
             this.lblDate.Text = "04/13/2000  08:00 am";
             this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -114,10 +110,9 @@ namespace KioskQMS
             this.lblId.AutoSize = true;
             this.lblId.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblId.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(4, 485);
-            this.lblId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblId.Location = new System.Drawing.Point(3, 394);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(704, 96);
+            this.lblId.Size = new System.Drawing.Size(528, 78);
             this.lblId.TabIndex = 5;
             this.lblId.Text = "ref. no: 00000";
             this.lblId.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -127,10 +122,9 @@ namespace KioskQMS
             this.lblNumber.AutoSize = true;
             this.lblNumber.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblNumber.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumber.Location = new System.Drawing.Point(4, 431);
-            this.lblNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNumber.Location = new System.Drawing.Point(3, 350);
             this.lblNumber.Name = "lblNumber";
-            this.lblNumber.Size = new System.Drawing.Size(704, 54);
+            this.lblNumber.Size = new System.Drawing.Size(528, 44);
             this.lblNumber.TabIndex = 4;
             this.lblNumber.Text = "09271234567";
             this.lblNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -141,10 +135,9 @@ namespace KioskQMS
             this.lblService.AutoSize = true;
             this.lblService.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblService.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblService.Location = new System.Drawing.Point(4, 341);
-            this.lblService.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblService.Location = new System.Drawing.Point(3, 277);
             this.lblService.Name = "lblService";
-            this.lblService.Size = new System.Drawing.Size(704, 90);
+            this.lblService.Size = new System.Drawing.Size(528, 73);
             this.lblService.TabIndex = 3;
             this.lblService.Text = "Deposit";
             this.lblService.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -154,10 +147,9 @@ namespace KioskQMS
             this.lblToken.AutoSize = true;
             this.lblToken.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblToken.Font = new System.Drawing.Font("Consolas", 100F);
-            this.lblToken.Location = new System.Drawing.Point(4, 117);
-            this.lblToken.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblToken.Location = new System.Drawing.Point(3, 95);
             this.lblToken.Name = "lblToken";
-            this.lblToken.Size = new System.Drawing.Size(704, 224);
+            this.lblToken.Size = new System.Drawing.Size(528, 182);
             this.lblToken.TabIndex = 2;
             this.lblToken.Text = "0";
             this.lblToken.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -167,10 +159,9 @@ namespace KioskQMS
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 28);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(3, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(704, 89);
+            this.label1.Size = new System.Drawing.Size(528, 72);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ticket Number";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -185,10 +176,9 @@ namespace KioskQMS
             this.btnProceed.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnProceed.IconColor = System.Drawing.Color.Black;
             this.btnProceed.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnProceed.Location = new System.Drawing.Point(900, 999);
-            this.btnProceed.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProceed.Location = new System.Drawing.Point(675, 812);
             this.btnProceed.Name = "btnProceed";
-            this.btnProceed.Size = new System.Drawing.Size(699, 90);
+            this.btnProceed.Size = new System.Drawing.Size(524, 73);
             this.btnProceed.TabIndex = 3;
             this.btnProceed.Text = "Proceed";
             this.btnProceed.UseVisualStyleBackColor = false;
@@ -196,18 +186,18 @@ namespace KioskQMS
             // 
             // FormTicket
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1942, 1102);
+            this.ClientSize = new System.Drawing.Size(1455, 894);
             this.Controls.Add(this.btnProceed);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormTicket";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormTicket";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FormTicket_Load);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
